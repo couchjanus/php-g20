@@ -1,26 +1,34 @@
 <?php
-// Альтернативный синтаксис
-?>
 
-<?php if ($_SERVER['REQUEST_URI']=='/') : ?>
-    <h1>Home Page</h1>
-<?php elseif ($_SERVER['REQUEST_URI']=='/about') : ?>
-    <h1>About Page</h1>
-<?php else : ?>
-    <h1>404</h1>
-<?php endif;?>
-<?php
-switch ($_SERVER['REQUEST_URI']) {
-       case '/':
-           # code...
-           echo "<h1>Home Page</h1>";
+// В элементе глобального массива $_SERVER['REQUEST_URI'] содержится полный адрес по которому обратился пользователь.
+
+function getURI() {
+    if (isset($_SERVER['REQUEST_URI']) and !empty($_SERVER['REQUEST_URI']))
+    return trim($_SERVER['REQUEST_URI'], '/');
+}
+
+// function getUrl() {
+//    $url  = ( $_SERVER["HTTPS"] != 'on' ) ? 'http://'.$_SERVER["SERVER_NAME"] :  'https://'.$_SERVER["SERVER_NAME"];
+//    $url .= ( $_SERVER["SERVER_PORT"] != 80 ) ? ":".$_SERVER["SERVER_PORT"] : "";
+//    return $url .= $_SERVER["REQUEST_URI"];
+// }    
+// Пример использования:  echo getUrl(); // вернет url вида http://xx.yy/404.html
+
+$uri = getURI();
+   switch ($uri) {
+       case '':
+           include 'home.php';
            break;
-       case '/about':
-           # code...
-           echo "<h1>About Page</h1>";
+       case 'about':
+           include 'about.php';
            break;
+       case 'contact':
+           include 'contact.php';
+           break;
+        case 'test':
+            include 'form.php';
+            break;
        default:
-           # code...
-           echo $_SERVER['REQUEST_URI'];
-           echo "<h1>404</h1>";
-   }
+           include '404.php';
+} 
+
