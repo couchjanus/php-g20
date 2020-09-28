@@ -1,37 +1,5 @@
 <?php
 
-// echo __DIR__;
-// echo '<h3>DIRECTORY_SEPARATOR (string): '.DIRECTORY_SEPARATOR.'</h3>';
-
-// define('ROOT', realpath(__DIR__.'/../'));
-// var_dump(ROOT);
-
-// var_dump(__DIR__.DIRECTORY_SEPARATOR.'..'.DIRECTORY_SEPARATOR.'config/app.php');
-// var_dump(realpath(__DIR__.DIRECTORY_SEPARATOR.'..'.DIRECTORY_SEPARATOR.'config'));
-
-// ===============Устанавливаем временную зону=========
-// Получение временной зоны по умолчанию
-echo "<h2>Get date default timezone</h2>";
-echo date_default_timezone_get();
-
-// Получение временной зоны по умолчанию
-echo "<h2>Get date timezone from php.ini</h2>";
-
-if (ini_get('date.timezone')) {
-    echo 'date.timezone: ' . ini_get('date.timezone');
-}
-// Получение временной зоны по умолчанию
-echo "<h2>Set date default timezone</h2>";
-date_default_timezone_set('Europe/Kiev');
-
-if (function_exists('date_default_timezone_set')) {
-    date_default_timezone_set('Europe/Kiev');   
-}
-    
-if (date_default_timezone_get()) {
-    echo 'date_default_timezone_set: ' . date_default_timezone_get();
-}
-
 // ===============Устанавливаем временную зону=========
 function init() {
     // Устанавливаем временную зону по умолчанию
@@ -42,28 +10,6 @@ function init() {
     // Установка ukraine локали
     setlocale(LC_ALL, 'uk_UA');
 }
-
-// ============Установка display errors===========    
-echo ini_get('display_errors');
-    
-ini_set('display_errors', 1);
-echo "<br>display_errors: ", ini_get('display_errors');
-     
-echo "<h2>Get display errors</h2>";
-
-echo ini_get('display_errors');
-  
-echo "<h2>Set display errors</h2>";
-if (!ini_get('display_errors')) {
-    ini_set('display_errors', '1');
-}   
-
-echo ini_get('display_errors');
-
-// ============Установка display errors===========
-
-require_once realpath(__DIR__.'/../config').'/app.php';
-var_dump(APP);
 
 // ============Установка ErrorLogging===========
 function setErrorLogging(){
@@ -79,11 +25,6 @@ function setErrorLogging(){
     ini_set('log_errors', "1");
     ini_set('error_log', LOGS . '/error_log.php');
 }
- 
-setErrorLogging();
-error_log("Hello Log!");
-
-// ============Установка ErrorLogging===========
 
 /**
  *  @return string текущий адрес запроса 
@@ -97,18 +38,6 @@ function getURI()
     }
 }
 
-
- $uri = getURI();
- echo "<pre>";
- print_r($uri);
- echo "</pre>";
- 
-
-// function render($template, $data = null) {
-//     $template .= '.php';
-//     include VIEWS."/layouts/app.php"; 
-// }
-
 function render($template, $data = null) {
     if ( $data ) {
         extract($data);
@@ -116,6 +45,44 @@ function render($template, $data = null) {
     $template .= '.php';
     include VIEWS."/layouts/app.php"; 
 }
+
+
+// function conf($mix)
+// {
+//     $url = CONFIG."/".$mix.".json";
+  
+//     if (file_exists($url)) { 
+//         $jsonFile = file_get_contents($url);
+//         return json_decode($jsonFile, TRUE);
+//     } else { 
+//         echo "The file $url does not exists";
+//         return false;
+//     }
+// }
+
+function conf($mix) {
+    $url = CONFIG."/".$mix.".json";
+    try{
+        //Attempt to open json file.
+        $jsonFile = file_get_contents($url);
+        //If fopen returns a boolean FALSE value, then an error has occurred.
+        if($jsonFile === false){
+            throw new Exception('Could not open json file!');
+        }
+        return json_decode($jsonFile, TRUE);
+    } 
+    //CATCH the exception if something goes wrong.
+    catch (Exception $ex) {
+        //Print out the exception message.
+        echo $ex->getMessage();
+        return false;
+    }
+}
+// ============================
+require_once realpath(__DIR__.'/../config').'/app.php';
+init();
+setErrorLogging();
+error_log("Hello Log!");
 
 switch (getURI()) {
     case '':
@@ -127,4 +94,9 @@ switch (getURI()) {
     case 'contact':
         require_once CONTROLLERS.'/ContactController.php';
         break;
-    }
+    case 'config':
+        require_once CONTROLLERS.'/ConfigController.php';
+        break;
+    default:
+        require_once CONTROLLERS.'/ErrorController.php';
+}
