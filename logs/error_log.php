@@ -111,3 +111,181 @@
 [28-Sep-2020 13:32:36 Europe/Kiev] Hello Log!
 [28-Sep-2020 13:32:42 Europe/Kiev] Hello Log!
 [28-Sep-2020 13:33:18 Europe/Kiev] Hello Log!
+[30-Sep-2020 12:08:14 Europe/Kiev] PHP Warning:  include(/home/janus/www/php-g20/app/Views/errors/404.php): failed to open stream: No such file or directory in /home/janus/www/php-g20/app/Views/layouts/app.php on line 9
+[30-Sep-2020 12:08:14 Europe/Kiev] PHP Stack trace:
+[30-Sep-2020 12:08:14 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g20/public/index.php:0
+[30-Sep-2020 12:08:14 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g20/public/index.php:2
+[30-Sep-2020 12:08:14 Europe/Kiev] PHP   3. require_once() /home/janus/www/php-g20/bootstrap/app.php:57
+[30-Sep-2020 12:08:14 Europe/Kiev] PHP   4. include_once() /home/janus/www/php-g20/core/Router.php:40
+[30-Sep-2020 12:08:14 Europe/Kiev] PHP   5. render() /home/janus/www/php-g20/app/Controllers/ErrorController.php:11
+[30-Sep-2020 12:08:14 Europe/Kiev] PHP   6. include() /home/janus/www/php-g20/bootstrap/app.php:34
+[30-Sep-2020 12:08:14 Europe/Kiev] PHP Warning:  include(): Failed opening '/home/janus/www/php-g20/app/Views/errors/404.php' for inclusion (include_path='.:/usr/share/php') in /home/janus/www/php-g20/app/Views/layouts/app.php on line 9
+[30-Sep-2020 12:08:14 Europe/Kiev] PHP Stack trace:
+[30-Sep-2020 12:08:14 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g20/public/index.php:0
+[30-Sep-2020 12:08:14 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g20/public/index.php:2
+[30-Sep-2020 12:08:14 Europe/Kiev] PHP   3. require_once() /home/janus/www/php-g20/bootstrap/app.php:57
+[30-Sep-2020 12:08:14 Europe/Kiev] PHP   4. include_once() /home/janus/www/php-g20/core/Router.php:40
+[30-Sep-2020 12:08:14 Europe/Kiev] PHP   5. render() /home/janus/www/php-g20/app/Controllers/ErrorController.php:11
+[30-Sep-2020 12:08:14 Europe/Kiev] PHP   6. include() /home/janus/www/php-g20/bootstrap/app.php:34
+[30-Sep-2020 12:08:27 Europe/Kiev] PHP Notice:  Undefined offset: 0 in /home/janus/www/php-g20/app/Views/contact/index.php on line 93
+[30-Sep-2020 12:08:27 Europe/Kiev] PHP Stack trace:
+[30-Sep-2020 12:08:27 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g20/public/index.php:0
+[30-Sep-2020 12:08:27 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g20/public/index.php:2
+[30-Sep-2020 12:08:27 Europe/Kiev] PHP   3. require_once() /home/janus/www/php-g20/bootstrap/app.php:57
+[30-Sep-2020 12:08:27 Europe/Kiev] PHP   4. include_once() /home/janus/www/php-g20/core/Router.php:32
+[30-Sep-2020 12:08:27 Europe/Kiev] PHP   5. render() /home/janus/www/php-g20/app/Controllers/ContactController.php:83
+[30-Sep-2020 12:08:27 Europe/Kiev] PHP   6. include() /home/janus/www/php-g20/bootstrap/app.php:34
+[30-Sep-2020 12:08:27 Europe/Kiev] PHP   7. include() /home/janus/www/php-g20/app/Views/layouts/app.php:9
+[30-Sep-2020 12:08:27 Europe/Kiev] PHP Notice:  Undefined offset: 1 in /home/janus/www/php-g20/app/Views/contact/index.php on line 93
+[30-Sep-2020 12:08:27 Europe/Kiev] PHP Stack trace:
+[30-Sep-2020 12:08:27 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g20/public/index.php:0
+[30-Sep-2020 12:08:27 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g20/public/index.php:2
+[30-Sep-2020 12:08:27 Europe/Kiev] PHP   3. require_once() /home/janus/www/php-g20/bootstrap/app.php:57
+[30-Sep-2020 12:08:27 Europe/Kiev] PHP   4. include_once() /home/janus/www/php-g20/core/Router.php:32
+[30-Sep-2020 12:08:27 Europe/Kiev] PHP   5. render() /home/janus/www/php-g20/app/Controllers/ContactController.php:83
+[30-Sep-2020 12:08:27 Europe/Kiev] PHP   6. include() /home/janus/www/php-g20/bootstrap/app.php:34
+[30-Sep-2020 12:08:27 Europe/Kiev] PHP   7. include() /home/janus/www/php-g20/app/Views/layouts/app.php:9
+[30-Sep-2020 12:08:27 Europe/Kiev] PHP Notice:  Undefined offset: 1 in /home/janus/www/php-g20/app/Views/contact/index.php on line 93
+[30-Sep-2020 12:08:27 Europe/Kiev] PHP Stack trace:
+[30-Sep-2020 12:08:27 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g20/public/index.php:0
+[30-Sep-2020 12:08:27 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g20/public/index.php:2
+[30-Sep-2020 12:08:27 Europe/Kiev] PHP   3. require_once() /home/janus/www/php-g20/bootstrap/app.php:57
+[30-Sep-2020 12:08:27 Europe/Kiev] PHP   4. include_once() /home/janus/www/php-g20/core/Router.php:32
+[30-Sep-2020 12:08:27 Europe/Kiev] PHP   5. render() /home/janus/www/php-g20/app/Controllers/ContactController.php:83
+[30-Sep-2020 12:08:27 Europe/Kiev] PHP   6. include() /home/janus/www/php-g20/bootstrap/app.php:34
+[30-Sep-2020 12:08:27 Europe/Kiev] PHP   7. include() /home/janus/www/php-g20/app/Views/layouts/app.php:9
+[30-Sep-2020 12:08:27 Europe/Kiev] PHP Notice:  Undefined offset: 2 in /home/janus/www/php-g20/app/Views/contact/index.php on line 93
+[30-Sep-2020 12:08:27 Europe/Kiev] PHP Stack trace:
+[30-Sep-2020 12:08:27 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g20/public/index.php:0
+[30-Sep-2020 12:08:27 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g20/public/index.php:2
+[30-Sep-2020 12:08:27 Europe/Kiev] PHP   3. require_once() /home/janus/www/php-g20/bootstrap/app.php:57
+[30-Sep-2020 12:08:27 Europe/Kiev] PHP   4. include_once() /home/janus/www/php-g20/core/Router.php:32
+[30-Sep-2020 12:08:27 Europe/Kiev] PHP   5. render() /home/janus/www/php-g20/app/Controllers/ContactController.php:83
+[30-Sep-2020 12:08:27 Europe/Kiev] PHP   6. include() /home/janus/www/php-g20/bootstrap/app.php:34
+[30-Sep-2020 12:08:27 Europe/Kiev] PHP   7. include() /home/janus/www/php-g20/app/Views/layouts/app.php:9
+[30-Sep-2020 12:08:27 Europe/Kiev] PHP Notice:  Undefined offset: 3 in /home/janus/www/php-g20/app/Views/contact/index.php on line 93
+[30-Sep-2020 12:08:27 Europe/Kiev] PHP Stack trace:
+[30-Sep-2020 12:08:27 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g20/public/index.php:0
+[30-Sep-2020 12:08:27 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g20/public/index.php:2
+[30-Sep-2020 12:08:27 Europe/Kiev] PHP   3. require_once() /home/janus/www/php-g20/bootstrap/app.php:57
+[30-Sep-2020 12:08:27 Europe/Kiev] PHP   4. include_once() /home/janus/www/php-g20/core/Router.php:32
+[30-Sep-2020 12:08:27 Europe/Kiev] PHP   5. render() /home/janus/www/php-g20/app/Controllers/ContactController.php:83
+[30-Sep-2020 12:08:27 Europe/Kiev] PHP   6. include() /home/janus/www/php-g20/bootstrap/app.php:34
+[30-Sep-2020 12:08:27 Europe/Kiev] PHP   7. include() /home/janus/www/php-g20/app/Views/layouts/app.php:9
+[30-Sep-2020 12:08:27 Europe/Kiev] PHP Notice:  Undefined offset: 0 in /home/janus/www/php-g20/app/Views/contact/index.php on line 93
+[30-Sep-2020 12:08:27 Europe/Kiev] PHP Stack trace:
+[30-Sep-2020 12:08:27 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g20/public/index.php:0
+[30-Sep-2020 12:08:27 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g20/public/index.php:2
+[30-Sep-2020 12:08:27 Europe/Kiev] PHP   3. require_once() /home/janus/www/php-g20/bootstrap/app.php:57
+[30-Sep-2020 12:08:27 Europe/Kiev] PHP   4. include_once() /home/janus/www/php-g20/core/Router.php:32
+[30-Sep-2020 12:08:27 Europe/Kiev] PHP   5. render() /home/janus/www/php-g20/app/Controllers/ContactController.php:83
+[30-Sep-2020 12:08:27 Europe/Kiev] PHP   6. include() /home/janus/www/php-g20/bootstrap/app.php:34
+[30-Sep-2020 12:08:27 Europe/Kiev] PHP   7. include() /home/janus/www/php-g20/app/Views/layouts/app.php:9
+[30-Sep-2020 12:08:27 Europe/Kiev] PHP Notice:  Undefined offset: 1 in /home/janus/www/php-g20/app/Views/contact/index.php on line 93
+[30-Sep-2020 12:08:27 Europe/Kiev] PHP Stack trace:
+[30-Sep-2020 12:08:27 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g20/public/index.php:0
+[30-Sep-2020 12:08:27 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g20/public/index.php:2
+[30-Sep-2020 12:08:27 Europe/Kiev] PHP   3. require_once() /home/janus/www/php-g20/bootstrap/app.php:57
+[30-Sep-2020 12:08:27 Europe/Kiev] PHP   4. include_once() /home/janus/www/php-g20/core/Router.php:32
+[30-Sep-2020 12:08:27 Europe/Kiev] PHP   5. render() /home/janus/www/php-g20/app/Controllers/ContactController.php:83
+[30-Sep-2020 12:08:27 Europe/Kiev] PHP   6. include() /home/janus/www/php-g20/bootstrap/app.php:34
+[30-Sep-2020 12:08:27 Europe/Kiev] PHP   7. include() /home/janus/www/php-g20/app/Views/layouts/app.php:9
+[30-Sep-2020 12:08:27 Europe/Kiev] PHP Notice:  Undefined offset: 1 in /home/janus/www/php-g20/app/Views/contact/index.php on line 93
+[30-Sep-2020 12:08:27 Europe/Kiev] PHP Stack trace:
+[30-Sep-2020 12:08:27 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g20/public/index.php:0
+[30-Sep-2020 12:08:27 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g20/public/index.php:2
+[30-Sep-2020 12:08:27 Europe/Kiev] PHP   3. require_once() /home/janus/www/php-g20/bootstrap/app.php:57
+[30-Sep-2020 12:08:27 Europe/Kiev] PHP   4. include_once() /home/janus/www/php-g20/core/Router.php:32
+[30-Sep-2020 12:08:27 Europe/Kiev] PHP   5. render() /home/janus/www/php-g20/app/Controllers/ContactController.php:83
+[30-Sep-2020 12:08:27 Europe/Kiev] PHP   6. include() /home/janus/www/php-g20/bootstrap/app.php:34
+[30-Sep-2020 12:08:27 Europe/Kiev] PHP   7. include() /home/janus/www/php-g20/app/Views/layouts/app.php:9
+[30-Sep-2020 12:08:27 Europe/Kiev] PHP Notice:  Undefined offset: 2 in /home/janus/www/php-g20/app/Views/contact/index.php on line 93
+[30-Sep-2020 12:08:27 Europe/Kiev] PHP Stack trace:
+[30-Sep-2020 12:08:27 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g20/public/index.php:0
+[30-Sep-2020 12:08:27 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g20/public/index.php:2
+[30-Sep-2020 12:08:27 Europe/Kiev] PHP   3. require_once() /home/janus/www/php-g20/bootstrap/app.php:57
+[30-Sep-2020 12:08:27 Europe/Kiev] PHP   4. include_once() /home/janus/www/php-g20/core/Router.php:32
+[30-Sep-2020 12:08:27 Europe/Kiev] PHP   5. render() /home/janus/www/php-g20/app/Controllers/ContactController.php:83
+[30-Sep-2020 12:08:27 Europe/Kiev] PHP   6. include() /home/janus/www/php-g20/bootstrap/app.php:34
+[30-Sep-2020 12:08:27 Europe/Kiev] PHP   7. include() /home/janus/www/php-g20/app/Views/layouts/app.php:9
+[30-Sep-2020 12:08:27 Europe/Kiev] PHP Notice:  Undefined offset: 3 in /home/janus/www/php-g20/app/Views/contact/index.php on line 93
+[30-Sep-2020 12:08:27 Europe/Kiev] PHP Stack trace:
+[30-Sep-2020 12:08:27 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g20/public/index.php:0
+[30-Sep-2020 12:08:27 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g20/public/index.php:2
+[30-Sep-2020 12:08:27 Europe/Kiev] PHP   3. require_once() /home/janus/www/php-g20/bootstrap/app.php:57
+[30-Sep-2020 12:08:27 Europe/Kiev] PHP   4. include_once() /home/janus/www/php-g20/core/Router.php:32
+[30-Sep-2020 12:08:27 Europe/Kiev] PHP   5. render() /home/janus/www/php-g20/app/Controllers/ContactController.php:83
+[30-Sep-2020 12:08:27 Europe/Kiev] PHP   6. include() /home/janus/www/php-g20/bootstrap/app.php:34
+[30-Sep-2020 12:08:27 Europe/Kiev] PHP   7. include() /home/janus/www/php-g20/app/Views/layouts/app.php:9
+[30-Sep-2020 12:08:27 Europe/Kiev] PHP Notice:  Undefined offset: 0 in /home/janus/www/php-g20/app/Views/contact/index.php on line 93
+[30-Sep-2020 12:08:27 Europe/Kiev] PHP Stack trace:
+[30-Sep-2020 12:08:27 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g20/public/index.php:0
+[30-Sep-2020 12:08:27 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g20/public/index.php:2
+[30-Sep-2020 12:08:27 Europe/Kiev] PHP   3. require_once() /home/janus/www/php-g20/bootstrap/app.php:57
+[30-Sep-2020 12:08:27 Europe/Kiev] PHP   4. include_once() /home/janus/www/php-g20/core/Router.php:32
+[30-Sep-2020 12:08:27 Europe/Kiev] PHP   5. render() /home/janus/www/php-g20/app/Controllers/ContactController.php:83
+[30-Sep-2020 12:08:27 Europe/Kiev] PHP   6. include() /home/janus/www/php-g20/bootstrap/app.php:34
+[30-Sep-2020 12:08:27 Europe/Kiev] PHP   7. include() /home/janus/www/php-g20/app/Views/layouts/app.php:9
+[30-Sep-2020 12:08:27 Europe/Kiev] PHP Notice:  Undefined offset: 1 in /home/janus/www/php-g20/app/Views/contact/index.php on line 93
+[30-Sep-2020 12:08:27 Europe/Kiev] PHP Stack trace:
+[30-Sep-2020 12:08:27 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g20/public/index.php:0
+[30-Sep-2020 12:08:27 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g20/public/index.php:2
+[30-Sep-2020 12:08:27 Europe/Kiev] PHP   3. require_once() /home/janus/www/php-g20/bootstrap/app.php:57
+[30-Sep-2020 12:08:27 Europe/Kiev] PHP   4. include_once() /home/janus/www/php-g20/core/Router.php:32
+[30-Sep-2020 12:08:27 Europe/Kiev] PHP   5. render() /home/janus/www/php-g20/app/Controllers/ContactController.php:83
+[30-Sep-2020 12:08:27 Europe/Kiev] PHP   6. include() /home/janus/www/php-g20/bootstrap/app.php:34
+[30-Sep-2020 12:08:27 Europe/Kiev] PHP   7. include() /home/janus/www/php-g20/app/Views/layouts/app.php:9
+[30-Sep-2020 12:08:27 Europe/Kiev] PHP Notice:  Undefined offset: 1 in /home/janus/www/php-g20/app/Views/contact/index.php on line 93
+[30-Sep-2020 12:08:27 Europe/Kiev] PHP Stack trace:
+[30-Sep-2020 12:08:27 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g20/public/index.php:0
+[30-Sep-2020 12:08:27 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g20/public/index.php:2
+[30-Sep-2020 12:08:27 Europe/Kiev] PHP   3. require_once() /home/janus/www/php-g20/bootstrap/app.php:57
+[30-Sep-2020 12:08:27 Europe/Kiev] PHP   4. include_once() /home/janus/www/php-g20/core/Router.php:32
+[30-Sep-2020 12:08:27 Europe/Kiev] PHP   5. render() /home/janus/www/php-g20/app/Controllers/ContactController.php:83
+[30-Sep-2020 12:08:27 Europe/Kiev] PHP   6. include() /home/janus/www/php-g20/bootstrap/app.php:34
+[30-Sep-2020 12:08:27 Europe/Kiev] PHP   7. include() /home/janus/www/php-g20/app/Views/layouts/app.php:9
+[30-Sep-2020 12:08:27 Europe/Kiev] PHP Notice:  Undefined offset: 2 in /home/janus/www/php-g20/app/Views/contact/index.php on line 93
+[30-Sep-2020 12:08:27 Europe/Kiev] PHP Stack trace:
+[30-Sep-2020 12:08:27 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g20/public/index.php:0
+[30-Sep-2020 12:08:27 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g20/public/index.php:2
+[30-Sep-2020 12:08:27 Europe/Kiev] PHP   3. require_once() /home/janus/www/php-g20/bootstrap/app.php:57
+[30-Sep-2020 12:08:27 Europe/Kiev] PHP   4. include_once() /home/janus/www/php-g20/core/Router.php:32
+[30-Sep-2020 12:08:27 Europe/Kiev] PHP   5. render() /home/janus/www/php-g20/app/Controllers/ContactController.php:83
+[30-Sep-2020 12:08:27 Europe/Kiev] PHP   6. include() /home/janus/www/php-g20/bootstrap/app.php:34
+[30-Sep-2020 12:08:27 Europe/Kiev] PHP   7. include() /home/janus/www/php-g20/app/Views/layouts/app.php:9
+[30-Sep-2020 12:08:27 Europe/Kiev] PHP Notice:  Undefined offset: 3 in /home/janus/www/php-g20/app/Views/contact/index.php on line 93
+[30-Sep-2020 12:08:27 Europe/Kiev] PHP Stack trace:
+[30-Sep-2020 12:08:27 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g20/public/index.php:0
+[30-Sep-2020 12:08:27 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g20/public/index.php:2
+[30-Sep-2020 12:08:27 Europe/Kiev] PHP   3. require_once() /home/janus/www/php-g20/bootstrap/app.php:57
+[30-Sep-2020 12:08:27 Europe/Kiev] PHP   4. include_once() /home/janus/www/php-g20/core/Router.php:32
+[30-Sep-2020 12:08:27 Europe/Kiev] PHP   5. render() /home/janus/www/php-g20/app/Controllers/ContactController.php:83
+[30-Sep-2020 12:08:27 Europe/Kiev] PHP   6. include() /home/janus/www/php-g20/bootstrap/app.php:34
+[30-Sep-2020 12:08:27 Europe/Kiev] PHP   7. include() /home/janus/www/php-g20/app/Views/layouts/app.php:9
+[30-Sep-2020 12:10:44 Europe/Kiev] PHP Notice:  Array to string conversion in /home/janus/www/php-g20/app/Views/contact/index.php on line 94
+[30-Sep-2020 12:10:44 Europe/Kiev] PHP Stack trace:
+[30-Sep-2020 12:10:44 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g20/public/index.php:0
+[30-Sep-2020 12:10:44 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g20/public/index.php:2
+[30-Sep-2020 12:10:44 Europe/Kiev] PHP   3. require_once() /home/janus/www/php-g20/bootstrap/app.php:57
+[30-Sep-2020 12:10:44 Europe/Kiev] PHP   4. include_once() /home/janus/www/php-g20/core/Router.php:32
+[30-Sep-2020 12:10:44 Europe/Kiev] PHP   5. render() /home/janus/www/php-g20/app/Controllers/ContactController.php:83
+[30-Sep-2020 12:10:44 Europe/Kiev] PHP   6. include() /home/janus/www/php-g20/bootstrap/app.php:34
+[30-Sep-2020 12:10:44 Europe/Kiev] PHP   7. include() /home/janus/www/php-g20/app/Views/layouts/app.php:9
+[30-Sep-2020 12:10:44 Europe/Kiev] PHP Notice:  Array to string conversion in /home/janus/www/php-g20/app/Views/contact/index.php on line 94
+[30-Sep-2020 12:10:44 Europe/Kiev] PHP Stack trace:
+[30-Sep-2020 12:10:44 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g20/public/index.php:0
+[30-Sep-2020 12:10:44 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g20/public/index.php:2
+[30-Sep-2020 12:10:44 Europe/Kiev] PHP   3. require_once() /home/janus/www/php-g20/bootstrap/app.php:57
+[30-Sep-2020 12:10:44 Europe/Kiev] PHP   4. include_once() /home/janus/www/php-g20/core/Router.php:32
+[30-Sep-2020 12:10:44 Europe/Kiev] PHP   5. render() /home/janus/www/php-g20/app/Controllers/ContactController.php:83
+[30-Sep-2020 12:10:44 Europe/Kiev] PHP   6. include() /home/janus/www/php-g20/bootstrap/app.php:34
+[30-Sep-2020 12:10:44 Europe/Kiev] PHP   7. include() /home/janus/www/php-g20/app/Views/layouts/app.php:9
+[30-Sep-2020 12:10:44 Europe/Kiev] PHP Notice:  Array to string conversion in /home/janus/www/php-g20/app/Views/contact/index.php on line 94
+[30-Sep-2020 12:10:44 Europe/Kiev] PHP Stack trace:
+[30-Sep-2020 12:10:44 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g20/public/index.php:0
+[30-Sep-2020 12:10:44 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g20/public/index.php:2
+[30-Sep-2020 12:10:44 Europe/Kiev] PHP   3. require_once() /home/janus/www/php-g20/bootstrap/app.php:57
+[30-Sep-2020 12:10:44 Europe/Kiev] PHP   4. include_once() /home/janus/www/php-g20/core/Router.php:32
+[30-Sep-2020 12:10:44 Europe/Kiev] PHP   5. render() /home/janus/www/php-g20/app/Controllers/ContactController.php:83
+[30-Sep-2020 12:10:44 Europe/Kiev] PHP   6. include() /home/janus/www/php-g20/bootstrap/app.php:34
+[30-Sep-2020 12:10:44 Europe/Kiev] PHP   7. include() /home/janus/www/php-g20/app/Views/layouts/app.php:9

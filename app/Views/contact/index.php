@@ -90,7 +90,9 @@
                 if (isset($comments)):
                     printf("<h2>There Are %d Comments In Guest Book</h2>", count($comments));       
                     foreach ($comments as $key => $value) {
-                        echo("<div class='top'><b>User ".$value[0]." </b> <a href='mailto:".$value[1]."'>".$value[1]."</a>  Added this: </div><div class='comment'>".strip_tags($value[2])."</div>"."<p>At ".strip_tags($value[3])."</p><hr>");
+                        // var_dump($key);
+                        // var_dump($value);
+                        echo("<div class='top'><b>User ".$value['name']." </b> <a href='mailto:".$value['email']."'>".$value['email']."</a>  Added this: </div><div class='comment'>".strip_tags($value['message'])."</div>"."<p>At ".strip_tags($value['created_at'])."</p><hr>");
                     }
                 else:
                     printf("<h2 style='color: #%x%x%x'>No Comments Yet...</h2>", 165, 27, 45);
