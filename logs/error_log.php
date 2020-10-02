@@ -289,3 +289,83 @@
 [30-Sep-2020 12:10:44 Europe/Kiev] PHP   5. render() /home/janus/www/php-g20/app/Controllers/ContactController.php:83
 [30-Sep-2020 12:10:44 Europe/Kiev] PHP   6. include() /home/janus/www/php-g20/bootstrap/app.php:34
 [30-Sep-2020 12:10:44 Europe/Kiev] PHP   7. include() /home/janus/www/php-g20/app/Views/layouts/app.php:9
+[02-Oct-2020 12:48:11 Europe/Kiev] PHP Warning:  include(/home/janus/www/php-g20/app/Views/errors/404.php): failed to open stream: No such file or directory in /home/janus/www/php-g20/app/Views/layouts/app.php on line 9
+[02-Oct-2020 12:48:11 Europe/Kiev] PHP Stack trace:
+[02-Oct-2020 12:48:11 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g20/public/index.php:0
+[02-Oct-2020 12:48:11 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g20/public/index.php:2
+[02-Oct-2020 12:48:11 Europe/Kiev] PHP   3. require_once() /home/janus/www/php-g20/bootstrap/app.php:57
+[02-Oct-2020 12:48:11 Europe/Kiev] PHP   4. include_once() /home/janus/www/php-g20/core/Router.php:46
+[02-Oct-2020 12:48:11 Europe/Kiev] PHP   5. render() /home/janus/www/php-g20/app/Controllers/ErrorController.php:11
+[02-Oct-2020 12:48:11 Europe/Kiev] PHP   6. include() /home/janus/www/php-g20/bootstrap/app.php:34
+[02-Oct-2020 12:48:11 Europe/Kiev] PHP Warning:  include(): Failed opening '/home/janus/www/php-g20/app/Views/errors/404.php' for inclusion (include_path='.:/usr/share/php') in /home/janus/www/php-g20/app/Views/layouts/app.php on line 9
+[02-Oct-2020 12:48:11 Europe/Kiev] PHP Stack trace:
+[02-Oct-2020 12:48:11 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g20/public/index.php:0
+[02-Oct-2020 12:48:11 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g20/public/index.php:2
+[02-Oct-2020 12:48:11 Europe/Kiev] PHP   3. require_once() /home/janus/www/php-g20/bootstrap/app.php:57
+[02-Oct-2020 12:48:11 Europe/Kiev] PHP   4. include_once() /home/janus/www/php-g20/core/Router.php:46
+[02-Oct-2020 12:48:11 Europe/Kiev] PHP   5. render() /home/janus/www/php-g20/app/Controllers/ErrorController.php:11
+[02-Oct-2020 12:48:11 Europe/Kiev] PHP   6. include() /home/janus/www/php-g20/bootstrap/app.php:34
+[02-Oct-2020 12:49:23 Europe/Kiev] PHP Warning:  include(/home/janus/www/php-g20/app/Views/about/index.php): failed to open stream: No such file or directory in /home/janus/www/php-g20/app/Views/layouts/app.php on line 9
+[02-Oct-2020 12:49:23 Europe/Kiev] PHP Stack trace:
+[02-Oct-2020 12:49:23 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g20/public/index.php:0
+[02-Oct-2020 12:49:23 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g20/public/index.php:2
+[02-Oct-2020 12:49:23 Europe/Kiev] PHP   3. require_once() /home/janus/www/php-g20/bootstrap/app.php:57
+[02-Oct-2020 12:49:23 Europe/Kiev] PHP   4. AboutController->__construct() /home/janus/www/php-g20/core/Router.php:34
+[02-Oct-2020 12:49:23 Europe/Kiev] PHP   5. render() /home/janus/www/php-g20/app/Controllers/AboutController.php:9
+[02-Oct-2020 12:49:23 Europe/Kiev] PHP   6. include() /home/janus/www/php-g20/bootstrap/app.php:34
+[02-Oct-2020 12:49:23 Europe/Kiev] PHP Warning:  include(): Failed opening '/home/janus/www/php-g20/app/Views/about/index.php' for inclusion (include_path='.:/usr/share/php') in /home/janus/www/php-g20/app/Views/layouts/app.php on line 9
+[02-Oct-2020 12:49:23 Europe/Kiev] PHP Stack trace:
+[02-Oct-2020 12:49:23 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g20/public/index.php:0
+[02-Oct-2020 12:49:23 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g20/public/index.php:2
+[02-Oct-2020 12:49:23 Europe/Kiev] PHP   3. require_once() /home/janus/www/php-g20/bootstrap/app.php:57
+[02-Oct-2020 12:49:23 Europe/Kiev] PHP   4. AboutController->__construct() /home/janus/www/php-g20/core/Router.php:34
+[02-Oct-2020 12:49:23 Europe/Kiev] PHP   5. render() /home/janus/www/php-g20/app/Controllers/AboutController.php:9
+[02-Oct-2020 12:49:23 Europe/Kiev] PHP   6. include() /home/janus/www/php-g20/bootstrap/app.php:34
+[02-Oct-2020 12:51:44 Europe/Kiev] PHP Warning:  include(/home/janus/www/php-g20/app/Views/errors/404.php): failed to open stream: No such file or directory in /home/janus/www/php-g20/app/Views/layouts/app.php on line 9
+[02-Oct-2020 12:51:44 Europe/Kiev] PHP Stack trace:
+[02-Oct-2020 12:51:44 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g20/public/index.php:0
+[02-Oct-2020 12:51:44 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g20/public/index.php:2
+[02-Oct-2020 12:51:44 Europe/Kiev] PHP   3. require_once() /home/janus/www/php-g20/bootstrap/app.php:57
+[02-Oct-2020 12:51:44 Europe/Kiev] PHP   4. include_once() /home/janus/www/php-g20/core/Router.php:46
+[02-Oct-2020 12:51:44 Europe/Kiev] PHP   5. render() /home/janus/www/php-g20/app/Controllers/ErrorController.php:11
+[02-Oct-2020 12:51:44 Europe/Kiev] PHP   6. include() /home/janus/www/php-g20/bootstrap/app.php:34
+[02-Oct-2020 12:51:44 Europe/Kiev] PHP Warning:  include(): Failed opening '/home/janus/www/php-g20/app/Views/errors/404.php' for inclusion (include_path='.:/usr/share/php') in /home/janus/www/php-g20/app/Views/layouts/app.php on line 9
+[02-Oct-2020 12:51:44 Europe/Kiev] PHP Stack trace:
+[02-Oct-2020 12:51:44 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g20/public/index.php:0
+[02-Oct-2020 12:51:44 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g20/public/index.php:2
+[02-Oct-2020 12:51:44 Europe/Kiev] PHP   3. require_once() /home/janus/www/php-g20/bootstrap/app.php:57
+[02-Oct-2020 12:51:44 Europe/Kiev] PHP   4. include_once() /home/janus/www/php-g20/core/Router.php:46
+[02-Oct-2020 12:51:44 Europe/Kiev] PHP   5. render() /home/janus/www/php-g20/app/Controllers/ErrorController.php:11
+[02-Oct-2020 12:51:44 Europe/Kiev] PHP   6. include() /home/janus/www/php-g20/bootstrap/app.php:34
+[02-Oct-2020 12:53:09 Europe/Kiev] PHP Warning:  include(/home/janus/www/php-g20/app/Views/errors/404.php): failed to open stream: No such file or directory in /home/janus/www/php-g20/app/Views/layouts/app.php on line 9
+[02-Oct-2020 12:53:09 Europe/Kiev] PHP Stack trace:
+[02-Oct-2020 12:53:09 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g20/public/index.php:0
+[02-Oct-2020 12:53:09 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g20/public/index.php:2
+[02-Oct-2020 12:53:09 Europe/Kiev] PHP   3. require_once() /home/janus/www/php-g20/bootstrap/app.php:57
+[02-Oct-2020 12:53:09 Europe/Kiev] PHP   4. include_once() /home/janus/www/php-g20/core/Router.php:46
+[02-Oct-2020 12:53:09 Europe/Kiev] PHP   5. render() /home/janus/www/php-g20/app/Controllers/ErrorController.php:11
+[02-Oct-2020 12:53:09 Europe/Kiev] PHP   6. include() /home/janus/www/php-g20/bootstrap/app.php:34
+[02-Oct-2020 12:53:09 Europe/Kiev] PHP Warning:  include(): Failed opening '/home/janus/www/php-g20/app/Views/errors/404.php' for inclusion (include_path='.:/usr/share/php') in /home/janus/www/php-g20/app/Views/layouts/app.php on line 9
+[02-Oct-2020 12:53:09 Europe/Kiev] PHP Stack trace:
+[02-Oct-2020 12:53:09 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g20/public/index.php:0
+[02-Oct-2020 12:53:09 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g20/public/index.php:2
+[02-Oct-2020 12:53:09 Europe/Kiev] PHP   3. require_once() /home/janus/www/php-g20/bootstrap/app.php:57
+[02-Oct-2020 12:53:09 Europe/Kiev] PHP   4. include_once() /home/janus/www/php-g20/core/Router.php:46
+[02-Oct-2020 12:53:09 Europe/Kiev] PHP   5. render() /home/janus/www/php-g20/app/Controllers/ErrorController.php:11
+[02-Oct-2020 12:53:09 Europe/Kiev] PHP   6. include() /home/janus/www/php-g20/bootstrap/app.php:34
+[02-Oct-2020 12:53:11 Europe/Kiev] PHP Warning:  include(/home/janus/www/php-g20/app/Views/errors/404.php): failed to open stream: No such file or directory in /home/janus/www/php-g20/app/Views/layouts/app.php on line 9
+[02-Oct-2020 12:53:11 Europe/Kiev] PHP Stack trace:
+[02-Oct-2020 12:53:11 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g20/public/index.php:0
+[02-Oct-2020 12:53:11 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g20/public/index.php:2
+[02-Oct-2020 12:53:11 Europe/Kiev] PHP   3. require_once() /home/janus/www/php-g20/bootstrap/app.php:57
+[02-Oct-2020 12:53:11 Europe/Kiev] PHP   4. include_once() /home/janus/www/php-g20/core/Router.php:46
+[02-Oct-2020 12:53:11 Europe/Kiev] PHP   5. render() /home/janus/www/php-g20/app/Controllers/ErrorController.php:11
+[02-Oct-2020 12:53:11 Europe/Kiev] PHP   6. include() /home/janus/www/php-g20/bootstrap/app.php:34
+[02-Oct-2020 12:53:11 Europe/Kiev] PHP Warning:  include(): Failed opening '/home/janus/www/php-g20/app/Views/errors/404.php' for inclusion (include_path='.:/usr/share/php') in /home/janus/www/php-g20/app/Views/layouts/app.php on line 9
+[02-Oct-2020 12:53:11 Europe/Kiev] PHP Stack trace:
+[02-Oct-2020 12:53:11 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g20/public/index.php:0
+[02-Oct-2020 12:53:11 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g20/public/index.php:2
+[02-Oct-2020 12:53:11 Europe/Kiev] PHP   3. require_once() /home/janus/www/php-g20/bootstrap/app.php:57
+[02-Oct-2020 12:53:11 Europe/Kiev] PHP   4. include_once() /home/janus/www/php-g20/core/Router.php:46
+[02-Oct-2020 12:53:11 Europe/Kiev] PHP   5. render() /home/janus/www/php-g20/app/Controllers/ErrorController.php:11
+[02-Oct-2020 12:53:11 Europe/Kiev] PHP   6. include() /home/janus/www/php-g20/bootstrap/app.php:34
