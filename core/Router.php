@@ -13,57 +13,40 @@ $result = null;
 
 // Подключаем файл routes
 $filename = CONFIG.'/routes'.EXT;
-
 if (file_exists($filename)) {
     $routes = include_once $filename;
 } else {
     echo "Файл $filename не существует";
 }
 
-// ===================method_exists==============================
-// foreach ($routes as $route => $path) {
-//     if ($route == getURI()) {
-//         $controller = $path;
-//         $action = 'index';
+function getController($path) {
+    $segments = explode('\\', $path);
+    list($controller, $action)=explode('@', array_pop($segments));
+    $controllerPath = DIRECTORY_SEPARATOR;
+    foreach ($segments as $segment) {
+        $controllerPath .= $segment.DIRECTORY_SEPARATOR;
+    }
+    return [$controllerPath, $controller, $action];
+}
 
-//         //Подключаем файл контроллера
-//         $controllerFile = CONTROLLERS . "/" . $controller . EXT;
-        
-//         if (file_exists($controllerFile)) {
-//             include_once $controllerFile;
-//             $controller = new $controller;
-
-//             if (method_exists($controller, $action)) {
-//                 $controller->$action();
-//             }
-//             $result = true;
-//             break;
-//         }
-//     } 
-// }
-
-// if ($result === null) {
-//     include_once CONTROLLERS.'/ErrorController.php';
-// }
-
-// ===================action==============================
+function initController($controllerPath, $controller, $action, $result = null) {
+    $controllerPath = CONTROLLERS . $controllerPath . $controller . EXT;
+    if (file_exists($controllerPath)) {
+        include_once $controllerPath;
+        $controller = new $controller;
+        if (method_exists($controller, $action)) {
+            $controller->$action();
+            $result = true;
+        }
+    }
+    return $result;
+}
 
 foreach ($routes as $route => $path) {
     if ($route == getURI()) {
-        list($controller, $action) = explode('@', $path);
-        //Подключаем файл контроллера
-        $controllerFile = CONTROLLERS . "/" . $controller . EXT;
-        
-        if (file_exists($controllerFile)) {
-            include_once $controllerFile;
-            $controller = new $controller;
-            if (method_exists($controller, $action)) {
-                $controller->$action();
-            }
-            $result = true;
-            break;
-        }
-    }  
+        $result = initController(...getController($path));
+        break;
+    }
 }
 
 if ($result === null) {

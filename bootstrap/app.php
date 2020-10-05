@@ -26,12 +26,22 @@ function setErrorLogging(){
     ini_set('error_log', LOGS . '/error_log.php');
 }
 
-function render($template, $data = null) {
-    if ( $data ) {
-        extract($data);
-    }
-    $template .= '.php';
-    include VIEWS."/layouts/app.php"; 
+// function render($template, $data = null) {
+//     if ( $data ) {
+//         extract($data);
+//     }
+//     $template .= '.php';
+//     include VIEWS."/layouts/app.php"; 
+// }
+
+
+function render($template, $data = null, $layout='app') 
+{
+	if ( !empty($data) ) {
+		extract($data);
+	}
+	$template .= '.php';
+	require VIEWS."/layouts/${layout}.php";
 }
 
 function conf($mix) {

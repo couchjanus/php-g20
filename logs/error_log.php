@@ -369,3 +369,19 @@
 [02-Oct-2020 12:53:11 Europe/Kiev] PHP   4. include_once() /home/janus/www/php-g20/core/Router.php:46
 [02-Oct-2020 12:53:11 Europe/Kiev] PHP   5. render() /home/janus/www/php-g20/app/Controllers/ErrorController.php:11
 [02-Oct-2020 12:53:11 Europe/Kiev] PHP   6. include() /home/janus/www/php-g20/bootstrap/app.php:34
+[05-Oct-2020 11:54:33 Europe/Kiev] PHP Warning:  include(/home/janus/www/php-g20/app/Views/errors/404.php): failed to open stream: No such file or directory in /home/janus/www/php-g20/app/Views/layouts/app.php on line 9
+[05-Oct-2020 11:54:33 Europe/Kiev] PHP Stack trace:
+[05-Oct-2020 11:54:33 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g20/public/index.php:0
+[05-Oct-2020 11:54:33 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g20/public/index.php:2
+[05-Oct-2020 11:54:33 Europe/Kiev] PHP   3. require_once() /home/janus/www/php-g20/bootstrap/app.php:57
+[05-Oct-2020 11:54:33 Europe/Kiev] PHP   4. include_once() /home/janus/www/php-g20/core/Router.php:53
+[05-Oct-2020 11:54:33 Europe/Kiev] PHP   5. render() /home/janus/www/php-g20/app/Controllers/ErrorController.php:11
+[05-Oct-2020 11:54:33 Europe/Kiev] PHP   6. include() /home/janus/www/php-g20/bootstrap/app.php:34
+[05-Oct-2020 11:54:33 Europe/Kiev] PHP Warning:  include(): Failed opening '/home/janus/www/php-g20/app/Views/errors/404.php' for inclusion (include_path='.:/usr/share/php') in /home/janus/www/php-g20/app/Views/layouts/app.php on line 9
+[05-Oct-2020 11:54:33 Europe/Kiev] PHP Stack trace:
+[05-Oct-2020 11:54:33 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g20/public/index.php:0
+[05-Oct-2020 11:54:33 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g20/public/index.php:2
+[05-Oct-2020 11:54:33 Europe/Kiev] PHP   3. require_once() /home/janus/www/php-g20/bootstrap/app.php:57
+[05-Oct-2020 11:54:33 Europe/Kiev] PHP   4. include_once() /home/janus/www/php-g20/core/Router.php:53
+[05-Oct-2020 11:54:33 Europe/Kiev] PHP   5. render() /home/janus/www/php-g20/app/Controllers/ErrorController.php:11
+[05-Oct-2020 11:54:33 Europe/Kiev] PHP   6. include() /home/janus/www/php-g20/bootstrap/app.php:34
