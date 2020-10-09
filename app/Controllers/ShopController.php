@@ -1,15 +1,15 @@
 <?php
-// HomeController.php
+// ShopController.php
 require_once CORE.'/Controller.php';
 require_once MODELS.'/Category.php';
 
-class HomeController extends Controller
+class ShopController extends Controller
 {
     public function index()
     {
-      $title = 'Top trending products';
+      $title = 'Shopping Page';
       $categories = (new Category())->getCategories();
-      $this->view->render('home/index', compact('title', 'categories'));
+      $this->view->render('home/shop', compact('title', 'categories'));
     }
-   
+
 }

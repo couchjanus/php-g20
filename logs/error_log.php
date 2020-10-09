@@ -385,3 +385,13 @@
 [05-Oct-2020 11:54:33 Europe/Kiev] PHP   4. include_once() /home/janus/www/php-g20/core/Router.php:53
 [05-Oct-2020 11:54:33 Europe/Kiev] PHP   5. render() /home/janus/www/php-g20/app/Controllers/ErrorController.php:11
 [05-Oct-2020 11:54:33 Europe/Kiev] PHP   6. include() /home/janus/www/php-g20/bootstrap/app.php:34
+[08-Oct-2020 15:55:30 Europe/Kiev] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'store.categories' doesn't exist in /home/janus/www/php-g20/app/Models/Category.php:33
+Stack trace:
+#0 /home/janus/www/php-g20/app/Models/Category.php(33): PDO->query()
+#1 /home/janus/www/php-g20/app/Controllers/HomeController.php(11): Category::getCategories()
+#2 /home/janus/www/php-g20/core/Router.php(38): HomeController->index()
+#3 /home/janus/www/php-g20/core/Router.php(47): initController()
+#4 /home/janus/www/php-g20/bootstrap/app.php(67): require_once('/home/janus/www...')
+#5 /home/janus/www/php-g20/public/index.php(2): require_once('/home/janus/www...')
+#6 {main}
+  thrown in /home/janus/www/php-g20/app/Models/Category.php on line 33

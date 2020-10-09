@@ -10,7 +10,7 @@
                         <a href="/" class="scroll-link">Home</a>
                     </li>
                     <li>
-                        <a href="#shop" class="scroll-link">Shop</a>
+                        <a href="/shop" class="scroll-link">Shop</a>
                     </li>
                     <li>
                         <a href="/contact" class="scroll-link">Contact</a>

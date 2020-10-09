@@ -4,13 +4,12 @@ class Request
 {
     private $request; // переменная хранящая данные GET и POST
    
-    // при создании объекта запроса мы пропускаем все данные
-    // через фильтр-функцию для очистки параметров от нежелательных данных
-    
     public function __construct() {
-        $this->request = $_REQUEST;
+        // $this->request = $_REQUEST;
+        // при создании объекта запроса мы пропускаем все данные
+        // через фильтр-функцию для очистки параметров от нежелательных данных
         // clear data from dangerous characters
-        // $this->request = $this->cleanInput($_REQUEST);
+        $this->request = $this->cleanInput($_REQUEST);
     
     }
 
