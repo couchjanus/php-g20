@@ -17,6 +17,12 @@
                     <tr>
                     <td><?=$category->id;?></td>
                     <td><?=$category->name;?></td>
+                    <th>Actions</th>
+                    <td>
+                      <a href="/admin/categories/show/<?=$category->id?>"><button class="btn btn-default"><span data-feather="eye"></span> View</button></a>
+                      <a href="/admin/categories/edit/<?=$category->id?>"><button class="btn btn-primary"><span data-feather="edit"></span> Edit</button></a>
+                      <a href="/admin/categories/delete/<?=$category->id?>"><button class="btn btn-danger"><span data-feather="delete"></span> Delete</button></a>
+                    </td>
                     </tr>
                 <?php endforeach;?>
               </tbody>

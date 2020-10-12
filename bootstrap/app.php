@@ -63,5 +63,8 @@ function conf($mix) {
 require_once realpath(__DIR__.'/../config').'/app.php';
 init();
 setErrorLogging();
-
+       
+require_once CORE.'/Request.php';
 require_once CORE.'/Router.php';
+$request  = (new Router())->run(Request::uri());
+

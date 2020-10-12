@@ -10,6 +10,9 @@ return [
    'admin/categories' => 'Admin\CategoryController@index',
    'admin/categories/create' => 'Admin\CategoryController@create',
    'admin/categories/stote' => 'Admin\CategoryController@store',
+   'admin/categories/show/{id}' => 'Admin\CategoryController@show',
+   'admin/categories/edit/{id}' => 'Admin\CategoryController@edit',
+   'admin/categories/delete/{id}' => 'Admin\CategoryController@delete',
    //Главаня страница
    '' => 'HomeController@index', 
 ];
