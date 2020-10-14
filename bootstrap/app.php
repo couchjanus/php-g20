@@ -66,5 +66,6 @@ setErrorLogging();
        
 require_once CORE.'/Request.php';
 require_once CORE.'/Router.php';
-$request  = (new Router())->run(Request::uri());
+$router = Router::load(ROUTES);
+$router->run(Request::uri(), Request::method());
 

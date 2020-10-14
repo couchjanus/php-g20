@@ -2,37 +2,48 @@
 /**
  * class Connection
  */
-class Connection
+class Connection extends PDO
 {
-    const ERROR_UNABLE = 'ERROR: no database connection';
-    public $pdo;
+    protected static $instance;
+    protected static $config = [];
 
-    public function __construct(array $config, $options = [])
-    {
-        if (!isset($config['db']['driver'])) {
-            $message = __METHOD__ . ' : ' 
-            . self::ERROR_UNABLE . PHP_EOL;
-            throw new Exception($message);
-        }
-        $dsn = $this->makeDsn($config['db']);
-        $options = array_replace($config['options'], $options);
-        try {
-            $this->pdo = new PDO(
-                $dsn, 
-                $config['user'], 
-                $config['password'],
-                $options
-            );
-        } catch (PDOException $e) {
-            throw new PDOException($e->getMessage(), (int)$e->getCode());
-        }
+    protected function __construct($dsn, $dbname, $dbpass, $options) {
+        parent::__construct($dsn, $dbname, $dbpass, $options);
     }
     
-    public static function makeDsn($config)
+    /**
+     * Private clone method to prevent cloning of the instance of the
+     * *Singleton* instance.
+     *
+     * @return void
+     */
+    private function __clone()
+    {
+    }
+
+    public function preparedStatment($query)
+    {
+        return $this->prepare($query);
+    }
+    
+    /**
+     * Get instance of the PDO
+     * @return PDO
+     */
+    public static function connect()
+    {
+        self::$config = require_once DB_CONFIG_FILE;
+        if(!self::$instance){
+            $dsn = self::makeDsn(self::$config['db']);
+            self::$instance = new Connection($dsn, self::$config['user'], self::$config['password'], self::$config['options']);
+        }
+        return self::$instance;
+    }
+    
+    private static function makeDsn($config)
     {
         $dsn = $config['driver'] . ':';
         unset($config['driver']);
-        
         foreach ($config as $key => $value) {
                 $dsn .= $key . '=' . $value . ';';
         }

@@ -1,51 +1,36 @@
 <?php
 
-class Router0
-{
-    protected $routes = ROUTES;
-
-    public function run($uri)
-    {   
-        if (array_key_exists($uri, $this->routes)) {
-            return $this->init(...$this->getController($this->routes[$uri]));
-        } else {
-            include_once CONTROLLERS ."/ErrorController.php";
-            (new ErrorController())->notFound();
-        }
-    }
-
-    private function getController($path) {
-        $segments = explode('\\', $path);
-        list($controller, $action)=explode('@', array_pop($segments));
-        $controllerPath = DIRECTORY_SEPARATOR;
-        foreach ($segments as $segment) {
-            $controllerPath .= $segment.DIRECTORY_SEPARATOR;
-        }
-        return [$controllerPath, $controller, $action];
-    }
-
-    private function init($controllerPath, $controller, $action) {
-        $controllerPath = CONTROLLERS . $controllerPath . $controller . EXT;
-        try {
-            include_once $controllerPath;
-            $controller = new $controller;
-        } catch(Exception $e) {
-            error_log($e->getMessage());
-        }
-        return $controller->$action();
-    }
-}
-
 class Router
 {
-    protected $routes = ROUTES;
+    protected $routes = [
+        'GET' => [],
+        'POST' => []
+    ];
 
-    public function run($uri)
+    public static function load($file)
+    {
+        $router = new static;
+        require $file;
+        return $router;
+    }
+
+    public function get($uri, $controller)
+    {
+        $this->routes['GET'][$uri] = $controller;
+    }
+
+    public function post($uri, $controller)
+    {
+        $this->routes['POST'][$uri] = $controller;
+    }
+
+
+    public function run($uri, $requestType)
     {   
-        if (array_key_exists($uri, $this->routes)) {
-            return $this->init(...$this->getController($this->routes[$uri]));
+        if (array_key_exists($uri, $this->routes[$requestType])) {
+            return $this->init(...$this->getController($this->routes[$requestType][$uri]));
         } else {
-            foreach ($this->routes as $key => $val) {
+            foreach ($this->routes[$requestType] as $key => $val) {
                 $pattern = "@^" .preg_replace('/{([a-zA-Z0-9]+)}/', '(?<$1>[0-9]+)', $key). "$@";
                 preg_match($pattern, $uri, $matches);
                 array_shift($matches);
@@ -55,7 +40,7 @@ class Router
                     return $this->init(...$arr);
                 }
             }  
-            return $this->init(...$this->getController($this->routes['404']));
+            return $this->init(...$this->getController($this->routes[$requestType]['404']));
         }
     }
 
