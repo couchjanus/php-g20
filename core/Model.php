@@ -7,10 +7,12 @@ class Model
     protected static $primaryKey = '';
 
     public static function all(){
-        $pdo = Connection::connect();
-        $statment = $pdo->preparedStatment("select * from ". static::$table);
+        // $pdo = Connection::connect();
+        // $statment = $pdo->preparedStatment("select * from ". static::$table);
+        $statment = Connection::connect()->preparedStatment("select * from ". static::$table);
         $statment->execute();
-        return $statment->fetchAll(PDO::FETCH_OBJ);
+        // return $statment->fetchAll(PDO::FETCH_OBJ);
+        return $statment->fetchAll();
     }
 
     /**

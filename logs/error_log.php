@@ -395,3 +395,28 @@ Stack trace:
 #5 /home/janus/www/php-g20/public/index.php(2): require_once('/home/janus/www...')
 #6 {main}
   thrown in /home/janus/www/php-g20/app/Models/Category.php on line 33
+[15-Oct-2020 16:37:12 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class 'ErrorController' not found in /home/janus/www/php-g20/core/Router.php:62
+Stack trace:
+#0 /home/janus/www/php-g20/core/Router.php(43): Router->init()
+#1 /home/janus/www/php-g20/bootstrap/app.php(70): Router->run()
+#2 /home/janus/www/php-g20/public/index.php(2): require_once('/home/janus/www...')
+#3 {main}
+  thrown in /home/janus/www/php-g20/core/Router.php on line 62
+[15-Oct-2020 16:38:16 Europe/Kiev] PHP Fatal error:  Uncaught Error: Call to a member function fetchAll() on bool in /home/janus/www/php-g20/core/Model.php:14
+Stack trace:
+#0 /home/janus/www/php-g20/app/Controllers/Admin/CategoryController.php(16): Model::all()
+#1 /home/janus/www/php-g20/core/Router.php(74): CategoryController->index()
+#2 /home/janus/www/php-g20/core/Router.php(31): Router->init()
+#3 /home/janus/www/php-g20/bootstrap/app.php(70): Router->run()
+#4 /home/janus/www/php-g20/public/index.php(2): require_once('/home/janus/www...')
+#5 {main}
+  thrown in /home/janus/www/php-g20/core/Model.php on line 14
+[15-Oct-2020 16:38:38 Europe/Kiev] PHP Fatal error:  Uncaught Error: Call to a member function fetchAll() on bool in /home/janus/www/php-g20/core/Model.php:14
+Stack trace:
+#0 /home/janus/www/php-g20/app/Controllers/Admin/CategoryController.php(16): Model::all()
+#1 /home/janus/www/php-g20/core/Router.php(74): CategoryController->index()
+#2 /home/janus/www/php-g20/core/Router.php(31): Router->init()
+#3 /home/janus/www/php-g20/bootstrap/app.php(70): Router->run()
+#4 /home/janus/www/php-g20/public/index.php(2): require_once('/home/janus/www...')
+#5 {main}
+  thrown in /home/janus/www/php-g20/core/Model.php on line 14
