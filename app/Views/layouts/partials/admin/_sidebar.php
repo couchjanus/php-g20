@@ -2,7 +2,7 @@
     <div class="sidebar-sticky pt-3">
         <ul class="nav flex-column">
             <li class="nav-item">
-                <a class="nav-link active" href="#">
+                <a class="nav-link active" href="/admin">
                     <span data-feather="home"></span>
                     Dashboard <span class="sr-only">(current)</span>
                 </a>
@@ -14,7 +14,19 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="/admin/categories">
+                    <span data-feather="file"></span>
+                    Categories
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/admin/brands">
+                    <span data-feather="file"></span>
+                    Brands 
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/admin/products">
                     <span data-feather="shopping-cart"></span>
                     Products
                 </a>

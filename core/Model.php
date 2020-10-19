@@ -7,12 +7,10 @@ class Model
     protected static $primaryKey = '';
 
     public static function all(){
-        // $pdo = Connection::connect();
-        // $statment = $pdo->preparedStatment("select * from ". static::$table);
-        $statment = Connection::connect()->preparedStatment("select * from ". static::$table);
+        $pdo = Connection::connect();
+        $statment = $pdo->preparedStatment("select * from ". static::$table);
         $statment->execute();
-        // return $statment->fetchAll(PDO::FETCH_OBJ);
-        return $statment->fetchAll();
+        return $statment->fetchAll(PDO::FETCH_OBJ);
     }
 
     /**
@@ -89,5 +87,29 @@ class Model
         }
         $statment->execute($condition);
         return $statment->fetchAll(PDO::FETCH_OBJ);
+    }
+
+    public static function getWithSql($sql){
+        $pdo = Connection::connect();
+        $statment = $pdo->preparedStatment($sql);
+        $statment->execute();
+        return $statment->fetchAll(PDO::FETCH_OBJ);
+    }
+
+    public static function getWithSqlById($sql, $id){
+        $pdo = Connection::connect();
+        $statment = $pdo->preparedStatment($sql);
+        $statment->bindParam(':id', $id);
+        $statment->execute();
+        return $statment->fetch(PDO::FETCH_OBJ);
+    }
+
+    public static function lastId() 
+    {
+        $query = "SELECT id FROM " . static::$table . " ORDER BY id DESC LIMIT 1";
+        $pdo = Connection::connect();
+        $statment = $pdo->preparedStatment($query);
+        $statment->execute();
+        return $statment->fetch(PDO::FETCH_ASSOC)['id'];
     }
 }

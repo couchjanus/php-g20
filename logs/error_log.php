@@ -420,3 +420,47 @@ Stack trace:
 #4 /home/janus/www/php-g20/public/index.php(2): require_once('/home/janus/www...')
 #5 {main}
   thrown in /home/janus/www/php-g20/core/Model.php on line 14
+[19-Oct-2020 11:19:47 Europe/Kiev] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'store.products' doesn't exist in /home/janus/www/php-g20/core/Connection.php:26
+Stack trace:
+#0 /home/janus/www/php-g20/core/Connection.php(26): PDO->prepare()
+#1 /home/janus/www/php-g20/core/Model.php(12): Connection->preparedStatment()
+#2 /home/janus/www/php-g20/app/Controllers/Admin/ProductController.php(18): Model::all()
+#3 /home/janus/www/php-g20/core/Router.php(74): ProductController->index()
+#4 /home/janus/www/php-g20/core/Router.php(31): Router->init()
+#5 /home/janus/www/php-g20/bootstrap/app.php(70): Router->run()
+#6 /home/janus/www/php-g20/public/index.php(2): require_once('/home/janus/www...')
+#7 {main}
+  thrown in /home/janus/www/php-g20/core/Connection.php on line 26
+[19-Oct-2020 11:25:43 Europe/Kiev] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'brand_id' in 'field list' in /home/janus/www/php-g20/core/Connection.php:26
+Stack trace:
+#0 /home/janus/www/php-g20/core/Connection.php(26): PDO->prepare()
+#1 /home/janus/www/php-g20/core/Model.php(46): Connection->preparedStatment()
+#2 /home/janus/www/php-g20/app/Controllers/Admin/ProductController.php(61): Model::insert()
+#3 /home/janus/www/php-g20/core/Router.php(74): ProductController->store()
+#4 /home/janus/www/php-g20/core/Router.php(31): Router->init()
+#5 /home/janus/www/php-g20/bootstrap/app.php(70): Router->run()
+#6 /home/janus/www/php-g20/public/index.php(2): require_once('/home/janus/www...')
+#7 {main}
+  thrown in /home/janus/www/php-g20/core/Connection.php on line 26
+[19-Oct-2020 11:29:52 Europe/Kiev] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'brand_id' in 'field list' in /home/janus/www/php-g20/core/Connection.php:26
+Stack trace:
+#0 /home/janus/www/php-g20/core/Connection.php(26): PDO->prepare()
+#1 /home/janus/www/php-g20/core/Model.php(44): Connection->preparedStatment()
+#2 /home/janus/www/php-g20/app/Controllers/Admin/ProductController.php(61): Model::insert()
+#3 /home/janus/www/php-g20/core/Router.php(74): ProductController->store()
+#4 /home/janus/www/php-g20/core/Router.php(31): Router->init()
+#5 /home/janus/www/php-g20/bootstrap/app.php(70): Router->run()
+#6 /home/janus/www/php-g20/public/index.php(2): require_once('/home/janus/www...')
+#7 {main}
+  thrown in /home/janus/www/php-g20/core/Connection.php on line 26
+[19-Oct-2020 11:30:47 Europe/Kiev] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'brand_id' in 'field list' in /home/janus/www/php-g20/core/Connection.php:26
+Stack trace:
+#0 /home/janus/www/php-g20/core/Connection.php(26): PDO->prepare()
+#1 /home/janus/www/php-g20/core/Model.php(44): Connection->preparedStatment()
+#2 /home/janus/www/php-g20/app/Controllers/Admin/ProductController.php(61): Model::insert()
+#3 /home/janus/www/php-g20/core/Router.php(74): ProductController->store()
+#4 /home/janus/www/php-g20/core/Router.php(31): Router->init()
+#5 /home/janus/www/php-g20/bootstrap/app.php(70): Router->run()
+#6 /home/janus/www/php-g20/public/index.php(2): require_once('/home/janus/www...')
+#7 {main}
+  thrown in /home/janus/www/php-g20/core/Connection.php on line 26

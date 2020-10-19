@@ -14,20 +14,16 @@ $router->post('admin/categories/update', 'Admin\CategoryController@patch');
 $router->get('admin/categories/delete/{id}', 'Admin\CategoryController@delete');
 $router->post('admin/categories/delete', 'Admin\CategoryController@destroy');
 
-// return [
-//    'about' => 'AboutController@index',
-//    'blog' => 'BlogController@index',
-//    'contact' => 'ContactController@index',
-//    'shop' => 'ShopController@index',
-   
-//    'admin' => 'Admin\DashboardController@index',
-//    'admin/categories' => 'Admin\CategoryController@index',
-//    'admin/categories/create' => 'Admin\CategoryController@create',
-//    'admin/categories/stote' => 'Admin\CategoryController@store',
-//    'admin/categories/show/{id}' => 'Admin\CategoryController@show',
-//    'admin/categories/edit/{id}' => 'Admin\CategoryController@edit',
-//    'admin/categories/delete/{id}' => 'Admin\CategoryController@delete',
-//    //Главаня страница
-//    '' => 'HomeController@index', 
-// ];
+$router->get('admin/brands', 'Admin\BrandController@index');
+$router->get('admin/brands/create', 'Admin\BrandController@create');
+$router->post('admin/brands/store', 'Admin\BrandController@store');
 
+$router->get('admin/products', 'Admin\ProductController@index');
+$router->get('admin/products/create', 'Admin\ProductController@create');
+$router->post('admin/products/store', 'Admin\ProductController@store');
+
+$router->get('api/shop', 'HomeController@getProducts');
+$router->get('api/shop/{id}', 'HomeController@getProduct');
+$router->get('api/product/{id}', 'HomeController@getProductItem');
+$router->get('api/categories', 'HomeController@getCategories');
+$router->get('api/categories/{id}', 'HomeController@getProductsByCategory');
