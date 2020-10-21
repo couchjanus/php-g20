@@ -464,3 +464,372 @@ Stack trace:
 #6 /home/janus/www/php-g20/public/index.php(2): require_once('/home/janus/www...')
 #7 {main}
   thrown in /home/janus/www/php-g20/core/Connection.php on line 26
+[21-Oct-2020 09:29:52 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class 'ErrorController' not found in /home/janus/www/php-g20/core/Router.php:62
+Stack trace:
+#0 /home/janus/www/php-g20/core/Router.php(43): Router->init()
+#1 /home/janus/www/php-g20/bootstrap/app.php(61): Router->run()
+#2 /home/janus/www/php-g20/public/index.php(2): require_once('/home/janus/www...')
+#3 {main}
+  thrown in /home/janus/www/php-g20/core/Router.php on line 62
+[21-Oct-2020 09:32:30 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class 'ErrorController' not found in /home/janus/www/php-g20/core/Router.php:62
+Stack trace:
+#0 /home/janus/www/php-g20/core/Router.php(43): Router->init()
+#1 /home/janus/www/php-g20/bootstrap/app.php(61): Router->run()
+#2 /home/janus/www/php-g20/public/index.php(2): require_once('/home/janus/www...')
+#3 {main}
+  thrown in /home/janus/www/php-g20/core/Router.php on line 62
+[21-Oct-2020 09:34:32 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class 'ErrorController' not found in /home/janus/www/php-g20/core/Router.php:62
+Stack trace:
+#0 /home/janus/www/php-g20/core/Router.php(43): Router->init()
+#1 /home/janus/www/php-g20/bootstrap/app.php(61): Router->run()
+#2 /home/janus/www/php-g20/public/index.php(2): require_once('/home/janus/www...')
+#3 {main}
+  thrown in /home/janus/www/php-g20/core/Router.php on line 62
+[21-Oct-2020 09:43:47 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class 'ErrorController' not found in /home/janus/www/php-g20/core/Router.php:62
+Stack trace:
+#0 /home/janus/www/php-g20/core/Router.php(43): Router->init()
+#1 /home/janus/www/php-g20/bootstrap/app.php(61): Router->run()
+#2 /home/janus/www/php-g20/public/index.php(2): require_once('/home/janus/www...')
+#3 {main}
+  thrown in /home/janus/www/php-g20/core/Router.php on line 62
+[21-Oct-2020 09:43:56 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class 'ContactController' not found in /home/janus/www/php-g20/core/Router.php:62
+Stack trace:
+#0 /home/janus/www/php-g20/core/Router.php(31): Router->init()
+#1 /home/janus/www/php-g20/bootstrap/app.php(61): Router->run()
+#2 /home/janus/www/php-g20/public/index.php(2): require_once('/home/janus/www...')
+#3 {main}
+  thrown in /home/janus/www/php-g20/core/Router.php on line 62
+[21-Oct-2020 09:49:59 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class 'ContactController' not found in /home/janus/www/php-g20/core/Router.php:62
+Stack trace:
+#0 /home/janus/www/php-g20/core/Router.php(31): Router->init()
+#1 /home/janus/www/php-g20/bootstrap/app.php(61): Router->run()
+#2 /home/janus/www/php-g20/public/index.php(2): require_once('/home/janus/www...')
+#3 {main}
+  thrown in /home/janus/www/php-g20/core/Router.php on line 62
+[21-Oct-2020 14:19:12 Europe/Kiev] PHP Notice:  Undefined offset: 404 in /home/janus/www/php-g20/core/Router.php on line 43
+[21-Oct-2020 14:19:12 Europe/Kiev] PHP Stack trace:
+[21-Oct-2020 14:19:12 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g20/public/index.php:0
+[21-Oct-2020 14:19:12 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g20/public/index.php:2
+[21-Oct-2020 14:19:12 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g20/bootstrap/app.php:61
+[21-Oct-2020 14:19:12 Europe/Kiev] PHP Notice:  Undefined offset: 1 in /home/janus/www/php-g20/core/Router.php on line 49
+[21-Oct-2020 14:19:12 Europe/Kiev] PHP Stack trace:
+[21-Oct-2020 14:19:12 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g20/public/index.php:0
+[21-Oct-2020 14:19:12 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g20/public/index.php:2
+[21-Oct-2020 14:19:12 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g20/bootstrap/app.php:61
+[21-Oct-2020 14:19:12 Europe/Kiev] PHP   4. Router->getController() /home/janus/www/php-g20/core/Router.php:43
+[21-Oct-2020 14:19:12 Europe/Kiev] PHP Fatal error:  Uncaught Exception: File /home/janus/www/php-g20/app/Controllers/.php does not exists. in /home/janus/www/php-g20/core/Router.php:70
+Stack trace:
+#0 /home/janus/www/php-g20/core/Router.php(43): Router->init()
+#1 /home/janus/www/php-g20/bootstrap/app.php(61): Router->run()
+#2 /home/janus/www/php-g20/public/index.php(2): require_once('/home/janus/www...')
+#3 {main}
+  thrown in /home/janus/www/php-g20/core/Router.php on line 70
+[21-Oct-2020 14:24:16 Europe/Kiev] PHP Notice:  Undefined offset: 404 in /home/janus/www/php-g20/core/Router.php on line 43
+[21-Oct-2020 14:24:16 Europe/Kiev] PHP Stack trace:
+[21-Oct-2020 14:24:16 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g20/public/index.php:0
+[21-Oct-2020 14:24:16 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g20/public/index.php:2
+[21-Oct-2020 14:24:16 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g20/bootstrap/app.php:61
+[21-Oct-2020 14:24:16 Europe/Kiev] PHP Notice:  Undefined offset: 1 in /home/janus/www/php-g20/core/Router.php on line 49
+[21-Oct-2020 14:24:16 Europe/Kiev] PHP Stack trace:
+[21-Oct-2020 14:24:16 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g20/public/index.php:0
+[21-Oct-2020 14:24:16 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g20/public/index.php:2
+[21-Oct-2020 14:24:16 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g20/bootstrap/app.php:61
+[21-Oct-2020 14:24:16 Europe/Kiev] PHP   4. Router->getController() /home/janus/www/php-g20/core/Router.php:43
+[21-Oct-2020 14:24:16 Europe/Kiev] PHP Fatal error:  Uncaught Exception: File /home/janus/www/php-g20/app/Controllers/.php does not exists. in /home/janus/www/php-g20/core/Router.php:70
+Stack trace:
+#0 /home/janus/www/php-g20/core/Router.php(43): Router->init()
+#1 /home/janus/www/php-g20/bootstrap/app.php(61): Router->run()
+#2 /home/janus/www/php-g20/public/index.php(2): require_once('/home/janus/www...')
+#3 {main}
+  thrown in /home/janus/www/php-g20/core/Router.php on line 70
+[21-Oct-2020 14:32:19 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class 'Picture' not found in /home/janus/www/php-g20/app/Controllers/Admin/CategoryController.php:52
+Stack trace:
+#0 /home/janus/www/php-g20/core/Router.php(74): CategoryController->store()
+#1 /home/janus/www/php-g20/core/Router.php(31): Router->init()
+#2 /home/janus/www/php-g20/bootstrap/app.php(61): Router->run()
+#3 /home/janus/www/php-g20/public/index.php(2): require_once('/home/janus/www...')
+#4 {main}
+  thrown in /home/janus/www/php-g20/app/Controllers/Admin/CategoryController.php on line 52
+[21-Oct-2020 14:48:57 Europe/Kiev] PHP Fatal error:  Cannot redeclare HomeController::getCategories() in /home/janus/www/php-g20/app/Controllers/HomeController.php on line 42
+[21-Oct-2020 14:48:57 Europe/Kiev] PHP Stack trace:
+[21-Oct-2020 14:48:57 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g20/public/index.php:0
+[21-Oct-2020 14:48:57 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g20/public/index.php:2
+[21-Oct-2020 14:48:57 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g20/bootstrap/app.php:61
+[21-Oct-2020 14:48:57 Europe/Kiev] PHP   4. Router->init() /home/janus/www/php-g20/core/Router.php:31
+[21-Oct-2020 14:49:47 Europe/Kiev] PHP Notice:  Undefined variable: table in /home/janus/www/php-g20/app/Models/Category.php on line 23
+[21-Oct-2020 14:49:47 Europe/Kiev] PHP Stack trace:
+[21-Oct-2020 14:49:47 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g20/public/index.php:0
+[21-Oct-2020 14:49:47 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g20/public/index.php:2
+[21-Oct-2020 14:49:47 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g20/bootstrap/app.php:61
+[21-Oct-2020 14:49:47 Europe/Kiev] PHP   4. Router->init() /home/janus/www/php-g20/core/Router.php:31
+[21-Oct-2020 14:49:47 Europe/Kiev] PHP   5. HomeController->getCategories() /home/janus/www/php-g20/core/Router.php:74
+[21-Oct-2020 14:49:47 Europe/Kiev] PHP   6. Category::getCategories() /home/janus/www/php-g20/app/Controllers/HomeController.php:23
+[21-Oct-2020 14:49:47 Europe/Kiev] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':: 
+                    AND t1.id = t2.resource_id' at line 3 in /home/janus/www/php-g20/core/Connection.php:26
+Stack trace:
+#0 /home/janus/www/php-g20/core/Connection.php(26): PDO->prepare()
+#1 /home/janus/www/php-g20/core/Model.php(94): Connection->preparedStatment()
+#2 /home/janus/www/php-g20/app/Models/Category.php(26): Model::getWithSql()
+#3 /home/janus/www/php-g20/app/Controllers/HomeController.php(23): Category::getCategories()
+#4 /home/janus/www/php-g20/core/Router.php(74): HomeController->getCategories()
+#5 /home/janus/www/php-g20/core/Router.php(31): Router->init()
+#6 /home/janus/www/php-g20/bootstrap/app.php(61): Router->run()
+#7 /home/janus/www/php-g20/public/index.php(2): require_once('/home/janus/www...')
+#8 {main}
+  thrown in /home/janus/www/php-g20/core/Connection.php on line 26
+[21-Oct-2020 15:40:19 Europe/Kiev] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'products.category_id' in 'on clause' in /home/janus/www/php-g20/core/Connection.php:26
+Stack trace:
+#0 /home/janus/www/php-g20/core/Connection.php(26): PDO->prepare()
+#1 /home/janus/www/php-g20/core/Model.php(94): Connection->preparedStatment()
+#2 /home/janus/www/php-g20/app/Models/Product.php(28): Model::getWithSql()
+#3 /home/janus/www/php-g20/app/Controllers/HomeController.php(18): Product::getProducts()
+#4 /home/janus/www/php-g20/core/Router.php(74): HomeController->getProducts()
+#5 /home/janus/www/php-g20/core/Router.php(31): Router->init()
+#6 /home/janus/www/php-g20/bootstrap/app.php(61): Router->run()
+#7 /home/janus/www/php-g20/public/index.php(2): require_once('/home/janus/www...')
+#8 {main}
+  thrown in /home/janus/www/php-g20/core/Connection.php on line 26
+[21-Oct-2020 17:10:14 Europe/Kiev] PHP Warning:  require_once(/home/janus/www/php-g20/core/Helper.php): failed to open stream: No such file or directory in /home/janus/www/php-g20/app/Controllers/Admin/RoleController.php on line 7
+[21-Oct-2020 17:10:14 Europe/Kiev] PHP Stack trace:
+[21-Oct-2020 17:10:14 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g20/public/index.php:0
+[21-Oct-2020 17:10:14 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g20/public/index.php:2
+[21-Oct-2020 17:10:14 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g20/bootstrap/app.php:61
+[21-Oct-2020 17:10:14 Europe/Kiev] PHP   4. Router->init() /home/janus/www/php-g20/core/Router.php:31
+[21-Oct-2020 17:10:14 Europe/Kiev] PHP   5. include_once() /home/janus/www/php-g20/core/Router.php:61
+[21-Oct-2020 17:10:14 Europe/Kiev] PHP Fatal error:  require_once(): Failed opening required '/home/janus/www/php-g20/core/Helper.php' (include_path='.:/usr/share/php') in /home/janus/www/php-g20/app/Controllers/Admin/RoleController.php on line 7
+[21-Oct-2020 17:10:14 Europe/Kiev] PHP Stack trace:
+[21-Oct-2020 17:10:14 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g20/public/index.php:0
+[21-Oct-2020 17:10:14 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g20/public/index.php:2
+[21-Oct-2020 17:10:14 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g20/bootstrap/app.php:61
+[21-Oct-2020 17:10:14 Europe/Kiev] PHP   4. Router->init() /home/janus/www/php-g20/core/Router.php:31
+[21-Oct-2020 17:10:14 Europe/Kiev] PHP   5. include_once() /home/janus/www/php-g20/core/Router.php:61
+[21-Oct-2020 17:12:04 Europe/Kiev] PHP Notice:  Undefined offset: 404 in /home/janus/www/php-g20/core/Router.php on line 43
+[21-Oct-2020 17:12:04 Europe/Kiev] PHP Stack trace:
+[21-Oct-2020 17:12:04 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g20/public/index.php:0
+[21-Oct-2020 17:12:04 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g20/public/index.php:2
+[21-Oct-2020 17:12:04 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g20/bootstrap/app.php:61
+[21-Oct-2020 17:12:04 Europe/Kiev] PHP Notice:  Undefined offset: 1 in /home/janus/www/php-g20/core/Router.php on line 49
+[21-Oct-2020 17:12:04 Europe/Kiev] PHP Stack trace:
+[21-Oct-2020 17:12:04 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g20/public/index.php:0
+[21-Oct-2020 17:12:04 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g20/public/index.php:2
+[21-Oct-2020 17:12:04 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g20/bootstrap/app.php:61
+[21-Oct-2020 17:12:04 Europe/Kiev] PHP   4. Router->getController() /home/janus/www/php-g20/core/Router.php:43
+[21-Oct-2020 17:12:04 Europe/Kiev] PHP Fatal error:  Uncaught Exception: File /home/janus/www/php-g20/app/Controllers/.php does not exists. in /home/janus/www/php-g20/core/Router.php:70
+Stack trace:
+#0 /home/janus/www/php-g20/core/Router.php(43): Router->init()
+#1 /home/janus/www/php-g20/bootstrap/app.php(61): Router->run()
+#2 /home/janus/www/php-g20/public/index.php(2): require_once('/home/janus/www...')
+#3 {main}
+  thrown in /home/janus/www/php-g20/core/Router.php on line 70
+[21-Oct-2020 17:12:58 Europe/Kiev] PHP Notice:  Undefined offset: 404 in /home/janus/www/php-g20/core/Router.php on line 43
+[21-Oct-2020 17:12:58 Europe/Kiev] PHP Stack trace:
+[21-Oct-2020 17:12:58 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g20/public/index.php:0
+[21-Oct-2020 17:12:58 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g20/public/index.php:2
+[21-Oct-2020 17:12:58 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g20/bootstrap/app.php:61
+[21-Oct-2020 17:12:58 Europe/Kiev] PHP Notice:  Undefined offset: 1 in /home/janus/www/php-g20/core/Router.php on line 49
+[21-Oct-2020 17:12:58 Europe/Kiev] PHP Stack trace:
+[21-Oct-2020 17:12:58 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g20/public/index.php:0
+[21-Oct-2020 17:12:58 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g20/public/index.php:2
+[21-Oct-2020 17:12:58 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g20/bootstrap/app.php:61
+[21-Oct-2020 17:12:58 Europe/Kiev] PHP   4. Router->getController() /home/janus/www/php-g20/core/Router.php:43
+[21-Oct-2020 17:12:58 Europe/Kiev] PHP Fatal error:  Uncaught Exception: File /home/janus/www/php-g20/app/Controllers/.php does not exists. in /home/janus/www/php-g20/core/Router.php:70
+Stack trace:
+#0 /home/janus/www/php-g20/core/Router.php(43): Router->init()
+#1 /home/janus/www/php-g20/bootstrap/app.php(61): Router->run()
+#2 /home/janus/www/php-g20/public/index.php(2): require_once('/home/janus/www...')
+#3 {main}
+  thrown in /home/janus/www/php-g20/core/Router.php on line 70
+[21-Oct-2020 17:14:41 Europe/Kiev] PHP Notice:  Undefined offset: 404 in /home/janus/www/php-g20/core/Router.php on line 43
+[21-Oct-2020 17:14:41 Europe/Kiev] PHP Stack trace:
+[21-Oct-2020 17:14:41 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g20/public/index.php:0
+[21-Oct-2020 17:14:41 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g20/public/index.php:2
+[21-Oct-2020 17:14:41 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g20/bootstrap/app.php:61
+[21-Oct-2020 17:14:41 Europe/Kiev] PHP Notice:  Undefined offset: 1 in /home/janus/www/php-g20/core/Router.php on line 49
+[21-Oct-2020 17:14:41 Europe/Kiev] PHP Stack trace:
+[21-Oct-2020 17:14:41 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g20/public/index.php:0
+[21-Oct-2020 17:14:41 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g20/public/index.php:2
+[21-Oct-2020 17:14:41 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g20/bootstrap/app.php:61
+[21-Oct-2020 17:14:41 Europe/Kiev] PHP   4. Router->getController() /home/janus/www/php-g20/core/Router.php:43
+[21-Oct-2020 17:14:41 Europe/Kiev] PHP Fatal error:  Uncaught Exception: File /home/janus/www/php-g20/app/Controllers/.php does not exists. in /home/janus/www/php-g20/core/Router.php:70
+Stack trace:
+#0 /home/janus/www/php-g20/core/Router.php(43): Router->init()
+#1 /home/janus/www/php-g20/bootstrap/app.php(61): Router->run()
+#2 /home/janus/www/php-g20/public/index.php(2): require_once('/home/janus/www...')
+#3 {main}
+  thrown in /home/janus/www/php-g20/core/Router.php on line 70
+[21-Oct-2020 17:16:46 Europe/Kiev] PHP Notice:  Undefined offset: 404 in /home/janus/www/php-g20/core/Router.php on line 43
+[21-Oct-2020 17:16:46 Europe/Kiev] PHP Stack trace:
+[21-Oct-2020 17:16:46 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g20/public/index.php:0
+[21-Oct-2020 17:16:46 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g20/public/index.php:2
+[21-Oct-2020 17:16:46 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g20/bootstrap/app.php:61
+[21-Oct-2020 17:16:46 Europe/Kiev] PHP Notice:  Undefined offset: 1 in /home/janus/www/php-g20/core/Router.php on line 49
+[21-Oct-2020 17:16:46 Europe/Kiev] PHP Stack trace:
+[21-Oct-2020 17:16:46 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g20/public/index.php:0
+[21-Oct-2020 17:16:46 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g20/public/index.php:2
+[21-Oct-2020 17:16:46 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g20/bootstrap/app.php:61
+[21-Oct-2020 17:16:46 Europe/Kiev] PHP   4. Router->getController() /home/janus/www/php-g20/core/Router.php:43
+[21-Oct-2020 17:16:46 Europe/Kiev] PHP Fatal error:  Uncaught Exception: File /home/janus/www/php-g20/app/Controllers/.php does not exists. in /home/janus/www/php-g20/core/Router.php:70
+Stack trace:
+#0 /home/janus/www/php-g20/core/Router.php(43): Router->init()
+#1 /home/janus/www/php-g20/bootstrap/app.php(61): Router->run()
+#2 /home/janus/www/php-g20/public/index.php(2): require_once('/home/janus/www...')
+#3 {main}
+  thrown in /home/janus/www/php-g20/core/Router.php on line 70
+[21-Oct-2020 17:18:45 Europe/Kiev] PHP Notice:  Undefined offset: 404 in /home/janus/www/php-g20/core/Router.php on line 43
+[21-Oct-2020 17:18:45 Europe/Kiev] PHP Stack trace:
+[21-Oct-2020 17:18:45 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g20/public/index.php:0
+[21-Oct-2020 17:18:45 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g20/public/index.php:2
+[21-Oct-2020 17:18:45 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g20/bootstrap/app.php:61
+[21-Oct-2020 17:18:45 Europe/Kiev] PHP Notice:  Undefined offset: 1 in /home/janus/www/php-g20/core/Router.php on line 49
+[21-Oct-2020 17:18:45 Europe/Kiev] PHP Stack trace:
+[21-Oct-2020 17:18:45 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g20/public/index.php:0
+[21-Oct-2020 17:18:45 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g20/public/index.php:2
+[21-Oct-2020 17:18:45 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g20/bootstrap/app.php:61
+[21-Oct-2020 17:18:45 Europe/Kiev] PHP   4. Router->getController() /home/janus/www/php-g20/core/Router.php:43
+[21-Oct-2020 17:18:45 Europe/Kiev] PHP Fatal error:  Uncaught Exception: File /home/janus/www/php-g20/app/Controllers/.php does not exists. in /home/janus/www/php-g20/core/Router.php:70
+Stack trace:
+#0 /home/janus/www/php-g20/core/Router.php(43): Router->init()
+#1 /home/janus/www/php-g20/bootstrap/app.php(61): Router->run()
+#2 /home/janus/www/php-g20/public/index.php(2): require_once('/home/janus/www...')
+#3 {main}
+  thrown in /home/janus/www/php-g20/core/Router.php on line 70
+[21-Oct-2020 17:20:48 Europe/Kiev] PHP Notice:  Undefined offset: 404 in /home/janus/www/php-g20/core/Router.php on line 43
+[21-Oct-2020 17:20:48 Europe/Kiev] PHP Stack trace:
+[21-Oct-2020 17:20:48 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g20/public/index.php:0
+[21-Oct-2020 17:20:48 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g20/public/index.php:2
+[21-Oct-2020 17:20:48 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g20/bootstrap/app.php:61
+[21-Oct-2020 17:20:48 Europe/Kiev] PHP Notice:  Undefined offset: 1 in /home/janus/www/php-g20/core/Router.php on line 49
+[21-Oct-2020 17:20:48 Europe/Kiev] PHP Stack trace:
+[21-Oct-2020 17:20:48 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g20/public/index.php:0
+[21-Oct-2020 17:20:48 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g20/public/index.php:2
+[21-Oct-2020 17:20:48 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g20/bootstrap/app.php:61
+[21-Oct-2020 17:20:48 Europe/Kiev] PHP   4. Router->getController() /home/janus/www/php-g20/core/Router.php:43
+[21-Oct-2020 17:20:48 Europe/Kiev] PHP Fatal error:  Uncaught Exception: File /home/janus/www/php-g20/app/Controllers/.php does not exists. in /home/janus/www/php-g20/core/Router.php:70
+Stack trace:
+#0 /home/janus/www/php-g20/core/Router.php(43): Router->init()
+#1 /home/janus/www/php-g20/bootstrap/app.php(61): Router->run()
+#2 /home/janus/www/php-g20/public/index.php(2): require_once('/home/janus/www...')
+#3 {main}
+  thrown in /home/janus/www/php-g20/core/Router.php on line 70
+[21-Oct-2020 17:22:42 Europe/Kiev] PHP Notice:  Undefined offset: 404 in /home/janus/www/php-g20/core/Router.php on line 43
+[21-Oct-2020 17:22:42 Europe/Kiev] PHP Stack trace:
+[21-Oct-2020 17:22:42 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g20/public/index.php:0
+[21-Oct-2020 17:22:42 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g20/public/index.php:2
+[21-Oct-2020 17:22:42 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g20/bootstrap/app.php:61
+[21-Oct-2020 17:22:42 Europe/Kiev] PHP Notice:  Undefined offset: 1 in /home/janus/www/php-g20/core/Router.php on line 49
+[21-Oct-2020 17:22:42 Europe/Kiev] PHP Stack trace:
+[21-Oct-2020 17:22:42 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g20/public/index.php:0
+[21-Oct-2020 17:22:42 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g20/public/index.php:2
+[21-Oct-2020 17:22:42 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g20/bootstrap/app.php:61
+[21-Oct-2020 17:22:42 Europe/Kiev] PHP   4. Router->getController() /home/janus/www/php-g20/core/Router.php:43
+[21-Oct-2020 17:22:42 Europe/Kiev] PHP Fatal error:  Uncaught Exception: File /home/janus/www/php-g20/app/Controllers/.php does not exists. in /home/janus/www/php-g20/core/Router.php:70
+Stack trace:
+#0 /home/janus/www/php-g20/core/Router.php(43): Router->init()
+#1 /home/janus/www/php-g20/bootstrap/app.php(61): Router->run()
+#2 /home/janus/www/php-g20/public/index.php(2): require_once('/home/janus/www...')
+#3 {main}
+  thrown in /home/janus/www/php-g20/core/Router.php on line 70
+[21-Oct-2020 17:23:17 Europe/Kiev] PHP Notice:  Undefined offset: 404 in /home/janus/www/php-g20/core/Router.php on line 43
+[21-Oct-2020 17:23:17 Europe/Kiev] PHP Stack trace:
+[21-Oct-2020 17:23:17 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g20/public/index.php:0
+[21-Oct-2020 17:23:17 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g20/public/index.php:2
+[21-Oct-2020 17:23:17 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g20/bootstrap/app.php:61
+[21-Oct-2020 17:23:17 Europe/Kiev] PHP Notice:  Undefined offset: 1 in /home/janus/www/php-g20/core/Router.php on line 49
+[21-Oct-2020 17:23:17 Europe/Kiev] PHP Stack trace:
+[21-Oct-2020 17:23:17 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g20/public/index.php:0
+[21-Oct-2020 17:23:17 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g20/public/index.php:2
+[21-Oct-2020 17:23:17 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g20/bootstrap/app.php:61
+[21-Oct-2020 17:23:17 Europe/Kiev] PHP   4. Router->getController() /home/janus/www/php-g20/core/Router.php:43
+[21-Oct-2020 17:23:17 Europe/Kiev] PHP Fatal error:  Uncaught Exception: File /home/janus/www/php-g20/app/Controllers/.php does not exists. in /home/janus/www/php-g20/core/Router.php:70
+Stack trace:
+#0 /home/janus/www/php-g20/core/Router.php(43): Router->init()
+#1 /home/janus/www/php-g20/bootstrap/app.php(61): Router->run()
+#2 /home/janus/www/php-g20/public/index.php(2): require_once('/home/janus/www...')
+#3 {main}
+  thrown in /home/janus/www/php-g20/core/Router.php on line 70
+[21-Oct-2020 17:26:30 Europe/Kiev] PHP Notice:  Undefined offset: 404 in /home/janus/www/php-g20/core/Router.php on line 43
+[21-Oct-2020 17:26:30 Europe/Kiev] PHP Stack trace:
+[21-Oct-2020 17:26:30 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g20/public/index.php:0
+[21-Oct-2020 17:26:30 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g20/public/index.php:2
+[21-Oct-2020 17:26:30 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g20/bootstrap/app.php:61
+[21-Oct-2020 17:26:30 Europe/Kiev] PHP Notice:  Undefined offset: 1 in /home/janus/www/php-g20/core/Router.php on line 49
+[21-Oct-2020 17:26:30 Europe/Kiev] PHP Stack trace:
+[21-Oct-2020 17:26:30 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g20/public/index.php:0
+[21-Oct-2020 17:26:30 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g20/public/index.php:2
+[21-Oct-2020 17:26:30 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g20/bootstrap/app.php:61
+[21-Oct-2020 17:26:30 Europe/Kiev] PHP   4. Router->getController() /home/janus/www/php-g20/core/Router.php:43
+[21-Oct-2020 17:26:30 Europe/Kiev] PHP Fatal error:  Uncaught Exception: File /home/janus/www/php-g20/app/Controllers/.php does not exists. in /home/janus/www/php-g20/core/Router.php:70
+Stack trace:
+#0 /home/janus/www/php-g20/core/Router.php(43): Router->init()
+#1 /home/janus/www/php-g20/bootstrap/app.php(61): Router->run()
+#2 /home/janus/www/php-g20/public/index.php(2): require_once('/home/janus/www...')
+#3 {main}
+  thrown in /home/janus/www/php-g20/core/Router.php on line 70
+[21-Oct-2020 17:28:18 Europe/Kiev] PHP Notice:  Undefined offset: 404 in /home/janus/www/php-g20/core/Router.php on line 43
+[21-Oct-2020 17:28:18 Europe/Kiev] PHP Stack trace:
+[21-Oct-2020 17:28:18 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g20/public/index.php:0
+[21-Oct-2020 17:28:18 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g20/public/index.php:2
+[21-Oct-2020 17:28:18 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g20/bootstrap/app.php:61
+[21-Oct-2020 17:28:18 Europe/Kiev] PHP Notice:  Undefined offset: 1 in /home/janus/www/php-g20/core/Router.php on line 49
+[21-Oct-2020 17:28:18 Europe/Kiev] PHP Stack trace:
+[21-Oct-2020 17:28:18 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g20/public/index.php:0
+[21-Oct-2020 17:28:18 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g20/public/index.php:2
+[21-Oct-2020 17:28:18 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g20/bootstrap/app.php:61
+[21-Oct-2020 17:28:18 Europe/Kiev] PHP   4. Router->getController() /home/janus/www/php-g20/core/Router.php:43
+[21-Oct-2020 17:28:18 Europe/Kiev] PHP Fatal error:  Uncaught Exception: File /home/janus/www/php-g20/app/Controllers/.php does not exists. in /home/janus/www/php-g20/core/Router.php:70
+Stack trace:
+#0 /home/janus/www/php-g20/core/Router.php(43): Router->init()
+#1 /home/janus/www/php-g20/bootstrap/app.php(61): Router->run()
+#2 /home/janus/www/php-g20/public/index.php(2): require_once('/home/janus/www...')
+#3 {main}
+  thrown in /home/janus/www/php-g20/core/Router.php on line 70
+[21-Oct-2020 17:29:40 Europe/Kiev] PHP Notice:  Undefined offset: 404 in /home/janus/www/php-g20/core/Router.php on line 43
+[21-Oct-2020 17:29:40 Europe/Kiev] PHP Stack trace:
+[21-Oct-2020 17:29:40 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g20/public/index.php:0
+[21-Oct-2020 17:29:40 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g20/public/index.php:2
+[21-Oct-2020 17:29:40 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g20/bootstrap/app.php:61
+[21-Oct-2020 17:29:40 Europe/Kiev] PHP Notice:  Undefined offset: 1 in /home/janus/www/php-g20/core/Router.php on line 49
+[21-Oct-2020 17:29:40 Europe/Kiev] PHP Stack trace:
+[21-Oct-2020 17:29:40 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g20/public/index.php:0
+[21-Oct-2020 17:29:40 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g20/public/index.php:2
+[21-Oct-2020 17:29:40 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g20/bootstrap/app.php:61
+[21-Oct-2020 17:29:40 Europe/Kiev] PHP   4. Router->getController() /home/janus/www/php-g20/core/Router.php:43
+[21-Oct-2020 17:29:40 Europe/Kiev] PHP Fatal error:  Uncaught Exception: File /home/janus/www/php-g20/app/Controllers/.php does not exists. in /home/janus/www/php-g20/core/Router.php:70
+Stack trace:
+#0 /home/janus/www/php-g20/core/Router.php(43): Router->init()
+#1 /home/janus/www/php-g20/bootstrap/app.php(61): Router->run()
+#2 /home/janus/www/php-g20/public/index.php(2): require_once('/home/janus/www...')
+#3 {main}
+  thrown in /home/janus/www/php-g20/core/Router.php on line 70
+[21-Oct-2020 17:34:03 Europe/Kiev] PHP Notice:  Undefined offset: 404 in /home/janus/www/php-g20/core/Router.php on line 43
+[21-Oct-2020 17:34:03 Europe/Kiev] PHP Stack trace:
+[21-Oct-2020 17:34:03 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g20/public/index.php:0
+[21-Oct-2020 17:34:03 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g20/public/index.php:2
+[21-Oct-2020 17:34:03 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g20/bootstrap/app.php:61
+[21-Oct-2020 17:34:03 Europe/Kiev] PHP Notice:  Undefined offset: 1 in /home/janus/www/php-g20/core/Router.php on line 49
+[21-Oct-2020 17:34:03 Europe/Kiev] PHP Stack trace:
+[21-Oct-2020 17:34:03 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g20/public/index.php:0
+[21-Oct-2020 17:34:03 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g20/public/index.php:2
+[21-Oct-2020 17:34:03 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g20/bootstrap/app.php:61
+[21-Oct-2020 17:34:03 Europe/Kiev] PHP   4. Router->getController() /home/janus/www/php-g20/core/Router.php:43
+[21-Oct-2020 17:34:03 Europe/Kiev] PHP Fatal error:  Uncaught Exception: File /home/janus/www/php-g20/app/Controllers/.php does not exists. in /home/janus/www/php-g20/core/Router.php:70
+Stack trace:
+#0 /home/janus/www/php-g20/core/Router.php(43): Router->init()
+#1 /home/janus/www/php-g20/bootstrap/app.php(61): Router->run()
+#2 /home/janus/www/php-g20/public/index.php(2): require_once('/home/janus/www...')
+#3 {main}
+  thrown in /home/janus/www/php-g20/core/Router.php on line 70
+[21-Oct-2020 17:38:04 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class 'ErrorController' not found in /home/janus/www/php-g20/core/Router.php:62
+Stack trace:
+#0 /home/janus/www/php-g20/core/Router.php(43): Router->init()
+#1 /home/janus/www/php-g20/bootstrap/app.php(61): Router->run()
+#2 /home/janus/www/php-g20/public/index.php(2): require_once('/home/janus/www...')
+#3 {main}
+  thrown in /home/janus/www/php-g20/core/Router.php on line 62
+[21-Oct-2020 17:38:15 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class 'ErrorController' not found in /home/janus/www/php-g20/core/Router.php:62
+Stack trace:
+#0 /home/janus/www/php-g20/core/Router.php(43): Router->init()
+#1 /home/janus/www/php-g20/bootstrap/app.php(61): Router->run()
+#2 /home/janus/www/php-g20/public/index.php(2): require_once('/home/janus/www...')
+#3 {main}
+  thrown in /home/janus/www/php-g20/core/Router.php on line 62

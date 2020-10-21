@@ -18,6 +18,12 @@ class HomeController extends Controller
         $products = Product::getProducts();
         echo json_encode($products);
     }
+    public function getCategories()
+    {
+        $categories = Category::getCategories();
+        echo json_encode($categories);
+    }
+    
 
     public function getProduct($vars)
     {
@@ -31,12 +37,6 @@ class HomeController extends Controller
         extract($vars);
         $product = Product::getProductBySlug($id);
         echo json_encode($product);
-    }
-
-    public function getCategories()
-    {
-        $categories = Category::getCategories();
-        echo json_encode($categories);
     }
 
     public function getProductsByCategory($vars)

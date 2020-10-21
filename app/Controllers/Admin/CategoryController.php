@@ -3,7 +3,7 @@
 require_once CORE.'/Controller.php';
 require_once CORE.'/Request.php';
 require_once MODELS.'/Category.php';
-
+require_once MODELS.'/Picture.php';
 /**
  * CategoryController.php
  */
@@ -23,11 +23,40 @@ class CategoryController extends Controller
         $this->view->render('admin/categories/create', compact('title'), 'admin');
     }
 
+    private function check_file_array($file) {
+        return isset($file['error'])
+            && !empty($file['name'])
+            && !empty($file['type'])
+            && !empty($file['tmp_name'])
+            && !empty($file['size']);
+    }
+
     public function store()
     {
         $request = new Request();
         $status = $request->status ? 1:0;
         (new Category())::insert(["name"=>$request->name, "status"=>$status]);
+
+        if (!empty($_FILES['image'])) {
+            $file = $_FILES['image'];
+            $uploadDir = $_SERVER['DOCUMENT_ROOT'] . DIRECTORY_SEPARATOR.'assets/images/products/categories';
+    
+            if($this->check_file_array($file)) {
+                // Проверяем загружен ли файл
+                if(is_uploaded_file($file["tmp_name"])) {
+                        $filename = sha1(mt_rand(1, 9999) . $file['name'] . uniqid()) . time();
+                        $uploaded = $uploadDir .'/'. $filename;
+                        // перемещаем файл из временной директории в конечную
+                        move_uploaded_file($file["tmp_name"], $uploaded);
+                        // Регистрируем файл в таблице изображений
+                        (new Picture())::insert(["filename"=>$filename,         'resource_id'=>(int)Category::lastId(), 'resource'=>Category::getResource()]);
+                } else {
+                    throw new Exception('Upload: Can\'t upload file.');
+                }
+            }else {
+                throw new Exception('Upload: Can\'t upload file.');
+            }
+        }
         $lastId = header('Location: /admin/categories');
     }
 
@@ -60,14 +89,15 @@ class CategoryController extends Controller
     {
         extract($vars);
         $title = 'Delete Category ';
-        $category = (new Category())::getByPrimaryKey($id);
+        $category = Category::getByPrimaryKey($id);
         $this->view->render('admin/categories/delete', compact('title', 'category'), 'admin');
     }
-    public function destroy()
+    public function destroy($vars)
     {
+        extract($vars);
         $request = new Request();
         if (isset($_POST['submit'])) {
-            (new Category())::destroy($request->id);
+            Category::destroy($request->id);
             header('Location: /admin/categories');
         } else {
             header('Location: /admin/categories');
