@@ -112,4 +112,10 @@ class Model
         $statment->execute();
         return $statment->fetch(PDO::FETCH_ASSOC)['id'];
     }
+    public static function getOne($sql){
+        $pdo = Connection::connect();
+        $statment = $pdo->preparedStatment($sql);
+        $statment->execute();
+        return $statment->fetch(PDO::FETCH_OBJ);
+    }
 }

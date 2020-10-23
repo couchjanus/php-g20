@@ -10,6 +10,7 @@
                 <tr>
                   <th>#</th>
                   <th>Name</th>
+                  
                   <th>Action</th>
                 </tr>
               </thead>
@@ -18,6 +19,7 @@
                     <tr>
                       <td><?php echo $role->id;?></td>
                       <td><?php echo $role->name;?></td>
+                      
                       <td>
                         <a href="/admin/roles/show/<?=$role->id?>"><button class="btn btn-default"><span data-feather="eye"></span> View</button></a>
                         <a href="/admin/roles/edit/<?=$role->id?>"><button class="btn btn-primary"><span data-feather="edit"></span> Edit</button></a>

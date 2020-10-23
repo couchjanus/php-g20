@@ -30,10 +30,23 @@ $router->post('admin/roles/store', 'Admin\RoleController@store');
 $router->get('admin/users', 'Admin\UserController@index');
 $router->get('admin/users/create', 'Admin\UserController@create');
 $router->post('admin/users/store', 'Admin\UserController@store');
+$router->get('admin/users/show/{id}', 'Admin\UserController@show');
+$router->get('admin/users/edit/{id}', 'Admin\UserController@edit');
+$router->post('admin/users/update', 'Admin\UserController@patch');
+$router->get('admin/users/delete/{id}', 'Admin\UserController@delete');
+$router->post('admin/users/destroy/{id}', 'Admin\UserController@destroy');
 
 $router->get('api/products', 'HomeController@getProducts');
 $router->get('api/categories', 'HomeController@getCategories');
+
+$router->post('api/cart', 'OrderController@cart');
 $router->get('api/shop/{id}', 'HomeController@getProduct');
 $router->get('api/product/{id}', 'HomeController@getProductItem');
 $router->get('api/categories', 'HomeController@getCategories');
 $router->get('api/categories/{id}', 'HomeController@getProductsByCategory');
+
+$router->get('sign', 'AuthController@signForm');
+$router->post('register', 'AuthController@signup');
+$router->post('login', 'AuthController@signin');
+$router->get('logout', 'AuthController@logout');
+$router->get('profile', 'ProfileController@index');

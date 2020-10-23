@@ -34,9 +34,15 @@
                     <li>
                         <a class="" href="#"> <i class="far fa-heart"></i><small class="text-gray"> (0)</small></a>
                     </li>
+                    <?php if (Helper::isGuest()) :?>
                     <li>
-                        <a class="" href="login.html"> <i class="fas fa-user-alt text-gray"></i></a>
+                        <a class="" href="/sign"> <i class="fas fa-user-alt text-gray"></i></a>
                     </li>
+                    <?php else :?>
+                        <li class="navbar__item user"><a href="/profile" title="User Profile"><i class="fas fa-address-card"></i></a></li>
+                        <li class="navbar__item user"><a href="/logout" title="Sign Out"><i class="fas fa-sign-out-alt"></i></a></li>
+                    <?php endif;?>
+
                 </ul>
                 <button class="nav-toggle">
                     <i class="fas fa-bars"></i>

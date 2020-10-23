@@ -10,14 +10,16 @@
                 <tr>
                   <th>#</th>
                   <th>User Name</th>
+                  <th>Status</th>
                   <th>Action</th>
                 </tr>
               </thead>
               <tbody>
                   <?php foreach ($users as $user):?>
                     <tr>
-                      <td><?php echo $user->id;?></td>
-                      <td><?php echo $user->name;?></td>
+                      <td><?=$user->id;?></td>
+                      <td><?=$user->name;?></td>
+                      <td><?=($user->status)?'active':'not active';?></td>
                       <td>
                         <a href="/admin/users/show/<?=$user->id?>"><button class="btn btn-default"><span data-feather="eye"></span> View</button></a>
                         <a href="/admin/users/edit/<?=$user->id?>"><button class="btn btn-primary"><span data-feather="edit"></span> Edit</button></a>

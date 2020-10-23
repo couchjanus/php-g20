@@ -833,3 +833,250 @@ Stack trace:
 #2 /home/janus/www/php-g20/public/index.php(2): require_once('/home/janus/www...')
 #3 {main}
   thrown in /home/janus/www/php-g20/core/Router.php on line 62
+[23-Oct-2020 09:56:34 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class 'ErrorController' not found in /home/janus/www/php-g20/core/Router.php:62
+Stack trace:
+#0 /home/janus/www/php-g20/core/Router.php(43): Router->init()
+#1 /home/janus/www/php-g20/bootstrap/app.php(61): Router->run()
+#2 /home/janus/www/php-g20/public/index.php(2): require_once('/home/janus/www...')
+#3 {main}
+  thrown in /home/janus/www/php-g20/core/Router.php on line 62
+[23-Oct-2020 10:44:54 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class 'ErrorController' not found in /home/janus/www/php-g20/core/Router.php:62
+Stack trace:
+#0 /home/janus/www/php-g20/core/Router.php(43): Router->init()
+#1 /home/janus/www/php-g20/bootstrap/app.php(61): Router->run()
+#2 /home/janus/www/php-g20/public/index.php(2): require_once('/home/janus/www...')
+#3 {main}
+  thrown in /home/janus/www/php-g20/core/Router.php on line 62
+[23-Oct-2020 10:46:35 Europe/Kiev] PHP Warning:  include(/home/janus/www/php-g20/app/Views/errors/index.php): failed to open stream: No such file or directory in /home/janus/www/php-g20/app/Views/layouts/app.php on line 9
+[23-Oct-2020 10:46:35 Europe/Kiev] PHP Stack trace:
+[23-Oct-2020 10:46:35 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g20/public/index.php:0
+[23-Oct-2020 10:46:35 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g20/public/index.php:2
+[23-Oct-2020 10:46:35 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g20/bootstrap/app.php:61
+[23-Oct-2020 10:46:35 Europe/Kiev] PHP   4. Router->init() /home/janus/www/php-g20/core/Router.php:43
+[23-Oct-2020 10:46:35 Europe/Kiev] PHP   5. ErrorController->NotFound() /home/janus/www/php-g20/core/Router.php:74
+[23-Oct-2020 10:46:35 Europe/Kiev] PHP   6. View->render() /home/janus/www/php-g20/app/Controllers/ErrorController.php:10
+[23-Oct-2020 10:46:35 Europe/Kiev] PHP   7. require() /home/janus/www/php-g20/core/View.php:31
+[23-Oct-2020 10:46:35 Europe/Kiev] PHP Warning:  include(): Failed opening '/home/janus/www/php-g20/app/Views/errors/index.php' for inclusion (include_path='.:/usr/share/php') in /home/janus/www/php-g20/app/Views/layouts/app.php on line 9
+[23-Oct-2020 10:46:35 Europe/Kiev] PHP Stack trace:
+[23-Oct-2020 10:46:35 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g20/public/index.php:0
+[23-Oct-2020 10:46:35 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g20/public/index.php:2
+[23-Oct-2020 10:46:35 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g20/bootstrap/app.php:61
+[23-Oct-2020 10:46:35 Europe/Kiev] PHP   4. Router->init() /home/janus/www/php-g20/core/Router.php:43
+[23-Oct-2020 10:46:35 Europe/Kiev] PHP   5. ErrorController->NotFound() /home/janus/www/php-g20/core/Router.php:74
+[23-Oct-2020 10:46:35 Europe/Kiev] PHP   6. View->render() /home/janus/www/php-g20/app/Controllers/ErrorController.php:10
+[23-Oct-2020 10:46:35 Europe/Kiev] PHP   7. require() /home/janus/www/php-g20/core/View.php:31
+[23-Oct-2020 10:51:48 Europe/Kiev] PHP Warning:  require_once(/home/janus/www/php-g20/app/Views/layouts/partials/_aside.php): failed to open stream: No such file or directory in /home/janus/www/php-g20/app/Views/errors/index.php on line 2
+[23-Oct-2020 10:51:48 Europe/Kiev] PHP Stack trace:
+[23-Oct-2020 10:51:48 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g20/public/index.php:0
+[23-Oct-2020 10:51:48 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g20/public/index.php:2
+[23-Oct-2020 10:51:48 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g20/bootstrap/app.php:61
+[23-Oct-2020 10:51:48 Europe/Kiev] PHP   4. Router->init() /home/janus/www/php-g20/core/Router.php:43
+[23-Oct-2020 10:51:48 Europe/Kiev] PHP   5. ErrorController->NotFound() /home/janus/www/php-g20/core/Router.php:74
+[23-Oct-2020 10:51:48 Europe/Kiev] PHP   6. View->render() /home/janus/www/php-g20/app/Controllers/ErrorController.php:10
+[23-Oct-2020 10:51:48 Europe/Kiev] PHP   7. require() /home/janus/www/php-g20/core/View.php:31
+[23-Oct-2020 10:51:48 Europe/Kiev] PHP   8. include() /home/janus/www/php-g20/app/Views/layouts/app.php:9
+[23-Oct-2020 10:51:48 Europe/Kiev] PHP Fatal error:  require_once(): Failed opening required '/home/janus/www/php-g20/app/Views/layouts/partials/_aside.php' (include_path='.:/usr/share/php') in /home/janus/www/php-g20/app/Views/errors/index.php on line 2
+[23-Oct-2020 10:51:48 Europe/Kiev] PHP Stack trace:
+[23-Oct-2020 10:51:48 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g20/public/index.php:0
+[23-Oct-2020 10:51:48 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g20/public/index.php:2
+[23-Oct-2020 10:51:48 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g20/bootstrap/app.php:61
+[23-Oct-2020 10:51:48 Europe/Kiev] PHP   4. Router->init() /home/janus/www/php-g20/core/Router.php:43
+[23-Oct-2020 10:51:48 Europe/Kiev] PHP   5. ErrorController->NotFound() /home/janus/www/php-g20/core/Router.php:74
+[23-Oct-2020 10:51:48 Europe/Kiev] PHP   6. View->render() /home/janus/www/php-g20/app/Controllers/ErrorController.php:10
+[23-Oct-2020 10:51:48 Europe/Kiev] PHP   7. require() /home/janus/www/php-g20/core/View.php:31
+[23-Oct-2020 10:51:48 Europe/Kiev] PHP   8. include() /home/janus/www/php-g20/app/Views/layouts/app.php:9
+[23-Oct-2020 10:55:25 Europe/Kiev] PHP Warning:  require_once(/home/janus/www/php-g20/app/Views/layouts/partials/_aside.php): failed to open stream: No such file or directory in /home/janus/www/php-g20/app/Views/errors/index.php on line 2
+[23-Oct-2020 10:55:25 Europe/Kiev] PHP Stack trace:
+[23-Oct-2020 10:55:25 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g20/public/index.php:0
+[23-Oct-2020 10:55:25 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g20/public/index.php:2
+[23-Oct-2020 10:55:25 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g20/bootstrap/app.php:61
+[23-Oct-2020 10:55:25 Europe/Kiev] PHP   4. Router->init() /home/janus/www/php-g20/core/Router.php:43
+[23-Oct-2020 10:55:25 Europe/Kiev] PHP   5. ErrorController->NotFound() /home/janus/www/php-g20/core/Router.php:74
+[23-Oct-2020 10:55:25 Europe/Kiev] PHP   6. View->render() /home/janus/www/php-g20/app/Controllers/ErrorController.php:10
+[23-Oct-2020 10:55:25 Europe/Kiev] PHP   7. require() /home/janus/www/php-g20/core/View.php:31
+[23-Oct-2020 10:55:25 Europe/Kiev] PHP   8. include() /home/janus/www/php-g20/app/Views/layouts/app.php:9
+[23-Oct-2020 10:55:25 Europe/Kiev] PHP Fatal error:  require_once(): Failed opening required '/home/janus/www/php-g20/app/Views/layouts/partials/_aside.php' (include_path='.:/usr/share/php') in /home/janus/www/php-g20/app/Views/errors/index.php on line 2
+[23-Oct-2020 10:55:25 Europe/Kiev] PHP Stack trace:
+[23-Oct-2020 10:55:25 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g20/public/index.php:0
+[23-Oct-2020 10:55:25 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g20/public/index.php:2
+[23-Oct-2020 10:55:25 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g20/bootstrap/app.php:61
+[23-Oct-2020 10:55:25 Europe/Kiev] PHP   4. Router->init() /home/janus/www/php-g20/core/Router.php:43
+[23-Oct-2020 10:55:25 Europe/Kiev] PHP   5. ErrorController->NotFound() /home/janus/www/php-g20/core/Router.php:74
+[23-Oct-2020 10:55:25 Europe/Kiev] PHP   6. View->render() /home/janus/www/php-g20/app/Controllers/ErrorController.php:10
+[23-Oct-2020 10:55:25 Europe/Kiev] PHP   7. require() /home/janus/www/php-g20/core/View.php:31
+[23-Oct-2020 10:55:25 Europe/Kiev] PHP   8. include() /home/janus/www/php-g20/app/Views/layouts/app.php:9
+[23-Oct-2020 10:57:50 Europe/Kiev] PHP Warning:  Use of undefined constant SESSION_PREFIX - assumed 'SESSION_PREFIX' (this will throw an Error in a future version of PHP) in /home/janus/www/php-g20/core/Session.php on line 42
+[23-Oct-2020 10:57:50 Europe/Kiev] PHP Stack trace:
+[23-Oct-2020 10:57:50 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g20/public/index.php:0
+[23-Oct-2020 10:57:50 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g20/public/index.php:2
+[23-Oct-2020 10:57:50 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g20/bootstrap/app.php:61
+[23-Oct-2020 10:57:50 Europe/Kiev] PHP   4. Router->init() /home/janus/www/php-g20/core/Router.php:31
+[23-Oct-2020 10:57:50 Europe/Kiev] PHP   5. AuthController->__construct() /home/janus/www/php-g20/core/Router.php:62
+[23-Oct-2020 10:57:50 Europe/Kiev] PHP   6. Session::get() /home/janus/www/php-g20/app/Controllers/AuthController.php:35
+[23-Oct-2020 10:57:50 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class 'Helper' not found in /home/janus/www/php-g20/app/Views/layouts/partials/_flash-message.php:2
+Stack trace:
+#0 /home/janus/www/php-g20/app/Views/layouts/auth.php(280): require_once()
+#1 /home/janus/www/php-g20/core/View.php(31): require('/home/janus/www...')
+#2 /home/janus/www/php-g20/app/Controllers/AuthController.php(59): View->render()
+#3 /home/janus/www/php-g20/core/Router.php(74): AuthController->signForm()
+#4 /home/janus/www/php-g20/core/Router.php(31): Router->init()
+#5 /home/janus/www/php-g20/bootstrap/app.php(61): Router->run()
+#6 /home/janus/www/php-g20/public/index.php(2): require_once('/home/janus/www...')
+#7 {main}
+  thrown in /home/janus/www/php-g20/app/Views/layouts/partials/_flash-message.php on line 2
+[23-Oct-2020 10:58:31 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class 'Helper' not found in /home/janus/www/php-g20/app/Views/layouts/partials/_flash-message.php:2
+Stack trace:
+#0 /home/janus/www/php-g20/app/Views/layouts/auth.php(280): require_once()
+#1 /home/janus/www/php-g20/core/View.php(31): require('/home/janus/www...')
+#2 /home/janus/www/php-g20/app/Controllers/AuthController.php(59): View->render()
+#3 /home/janus/www/php-g20/core/Router.php(74): AuthController->signForm()
+#4 /home/janus/www/php-g20/core/Router.php(31): Router->init()
+#5 /home/janus/www/php-g20/bootstrap/app.php(61): Router->run()
+#6 /home/janus/www/php-g20/public/index.php(2): require_once('/home/janus/www...')
+#7 {main}
+  thrown in /home/janus/www/php-g20/app/Views/layouts/partials/_flash-message.php on line 2
+[23-Oct-2020 11:09:38 Europe/Kiev] PHP Notice:  Undefined offset: 1 in /home/janus/www/php-g20/app/Controllers/AuthController.php on line 69
+[23-Oct-2020 11:09:38 Europe/Kiev] PHP Stack trace:
+[23-Oct-2020 11:09:38 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g20/public/index.php:0
+[23-Oct-2020 11:09:38 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g20/public/index.php:2
+[23-Oct-2020 11:09:38 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g20/bootstrap/app.php:62
+[23-Oct-2020 11:09:38 Europe/Kiev] PHP   4. Router->init() /home/janus/www/php-g20/core/Router.php:31
+[23-Oct-2020 11:09:38 Europe/Kiev] PHP   5. AuthController->signup() /home/janus/www/php-g20/core/Router.php:74
+[23-Oct-2020 12:23:22 Europe/Kiev] PHP Notice:  Undefined variable: role in /home/janus/www/php-g20/app/Views/admin/users/index.php on line 22
+[23-Oct-2020 12:23:22 Europe/Kiev] PHP Stack trace:
+[23-Oct-2020 12:23:22 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g20/public/index.php:0
+[23-Oct-2020 12:23:22 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g20/public/index.php:2
+[23-Oct-2020 12:23:22 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g20/bootstrap/app.php:62
+[23-Oct-2020 12:23:22 Europe/Kiev] PHP   4. Router->init() /home/janus/www/php-g20/core/Router.php:31
+[23-Oct-2020 12:23:22 Europe/Kiev] PHP   5. UserController->index() /home/janus/www/php-g20/core/Router.php:74
+[23-Oct-2020 12:23:22 Europe/Kiev] PHP   6. View->render() /home/janus/www/php-g20/app/Controllers/Admin/UserController.php:27
+[23-Oct-2020 12:23:22 Europe/Kiev] PHP   7. require() /home/janus/www/php-g20/core/View.php:31
+[23-Oct-2020 12:23:22 Europe/Kiev] PHP   8. include() /home/janus/www/php-g20/app/Views/layouts/admin.php:19
+[23-Oct-2020 12:23:22 Europe/Kiev] PHP Notice:  Trying to get property 'status' of non-object in /home/janus/www/php-g20/app/Views/admin/users/index.php on line 22
+[23-Oct-2020 12:23:22 Europe/Kiev] PHP Stack trace:
+[23-Oct-2020 12:23:22 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g20/public/index.php:0
+[23-Oct-2020 12:23:22 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g20/public/index.php:2
+[23-Oct-2020 12:23:22 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g20/bootstrap/app.php:62
+[23-Oct-2020 12:23:22 Europe/Kiev] PHP   4. Router->init() /home/janus/www/php-g20/core/Router.php:31
+[23-Oct-2020 12:23:22 Europe/Kiev] PHP   5. UserController->index() /home/janus/www/php-g20/core/Router.php:74
+[23-Oct-2020 12:23:22 Europe/Kiev] PHP   6. View->render() /home/janus/www/php-g20/app/Controllers/Admin/UserController.php:27
+[23-Oct-2020 12:23:22 Europe/Kiev] PHP   7. require() /home/janus/www/php-g20/core/View.php:31
+[23-Oct-2020 12:23:22 Europe/Kiev] PHP   8. include() /home/janus/www/php-g20/app/Views/layouts/admin.php:19
+[23-Oct-2020 12:23:22 Europe/Kiev] PHP Notice:  Undefined variable: role in /home/janus/www/php-g20/app/Views/admin/users/index.php on line 22
+[23-Oct-2020 12:23:22 Europe/Kiev] PHP Stack trace:
+[23-Oct-2020 12:23:22 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g20/public/index.php:0
+[23-Oct-2020 12:23:22 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g20/public/index.php:2
+[23-Oct-2020 12:23:22 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g20/bootstrap/app.php:62
+[23-Oct-2020 12:23:22 Europe/Kiev] PHP   4. Router->init() /home/janus/www/php-g20/core/Router.php:31
+[23-Oct-2020 12:23:22 Europe/Kiev] PHP   5. UserController->index() /home/janus/www/php-g20/core/Router.php:74
+[23-Oct-2020 12:23:22 Europe/Kiev] PHP   6. View->render() /home/janus/www/php-g20/app/Controllers/Admin/UserController.php:27
+[23-Oct-2020 12:23:22 Europe/Kiev] PHP   7. require() /home/janus/www/php-g20/core/View.php:31
+[23-Oct-2020 12:23:22 Europe/Kiev] PHP   8. include() /home/janus/www/php-g20/app/Views/layouts/admin.php:19
+[23-Oct-2020 12:23:22 Europe/Kiev] PHP Notice:  Trying to get property 'status' of non-object in /home/janus/www/php-g20/app/Views/admin/users/index.php on line 22
+[23-Oct-2020 12:23:22 Europe/Kiev] PHP Stack trace:
+[23-Oct-2020 12:23:22 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g20/public/index.php:0
+[23-Oct-2020 12:23:22 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g20/public/index.php:2
+[23-Oct-2020 12:23:22 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g20/bootstrap/app.php:62
+[23-Oct-2020 12:23:22 Europe/Kiev] PHP   4. Router->init() /home/janus/www/php-g20/core/Router.php:31
+[23-Oct-2020 12:23:22 Europe/Kiev] PHP   5. UserController->index() /home/janus/www/php-g20/core/Router.php:74
+[23-Oct-2020 12:23:22 Europe/Kiev] PHP   6. View->render() /home/janus/www/php-g20/app/Controllers/Admin/UserController.php:27
+[23-Oct-2020 12:23:22 Europe/Kiev] PHP   7. require() /home/janus/www/php-g20/core/View.php:31
+[23-Oct-2020 12:23:22 Europe/Kiev] PHP   8. include() /home/janus/www/php-g20/app/Views/layouts/admin.php:19
+[23-Oct-2020 12:29:35 Europe/Kiev] PHP Warning:  session_unset() expects exactly 0 parameters, 1 given in /home/janus/www/php-g20/core/Session.php on line 59
+[23-Oct-2020 12:29:35 Europe/Kiev] PHP Stack trace:
+[23-Oct-2020 12:29:35 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g20/public/index.php:0
+[23-Oct-2020 12:29:35 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g20/public/index.php:2
+[23-Oct-2020 12:29:35 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g20/bootstrap/app.php:62
+[23-Oct-2020 12:29:35 Europe/Kiev] PHP   4. Router->init() /home/janus/www/php-g20/core/Router.php:31
+[23-Oct-2020 12:29:35 Europe/Kiev] PHP   5. AuthController->logout() /home/janus/www/php-g20/core/Router.php:74
+[23-Oct-2020 12:29:35 Europe/Kiev] PHP   6. Session::destroy() /home/janus/www/php-g20/app/Controllers/AuthController.php:139
+[23-Oct-2020 12:29:35 Europe/Kiev] PHP   7. session_unset() /home/janus/www/php-g20/core/Session.php:59
+[23-Oct-2020 12:42:21 Europe/Kiev] PHP Parse error:  Invalid indentation - tabs and spaces cannot be mixed in /home/janus/www/php-g20/app/Views/layouts/partials/_flash-message.php on line 9
+[23-Oct-2020 13:02:28 Europe/Kiev] PHP Warning:  session_unset() expects exactly 0 parameters, 1 given in /home/janus/www/php-g20/core/Session.php on line 58
+[23-Oct-2020 13:02:28 Europe/Kiev] PHP Stack trace:
+[23-Oct-2020 13:02:28 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g20/public/index.php:0
+[23-Oct-2020 13:02:28 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g20/public/index.php:2
+[23-Oct-2020 13:02:28 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g20/bootstrap/app.php:62
+[23-Oct-2020 13:02:28 Europe/Kiev] PHP   4. Router->init() /home/janus/www/php-g20/core/Router.php:31
+[23-Oct-2020 13:02:28 Europe/Kiev] PHP   5. ProfileController->index() /home/janus/www/php-g20/core/Router.php:74
+[23-Oct-2020 13:02:28 Europe/Kiev] PHP   6. View->render() /home/janus/www/php-g20/app/Controllers/ProfileController.php:41
+[23-Oct-2020 13:02:28 Europe/Kiev] PHP   7. require() /home/janus/www/php-g20/core/View.php:31
+[23-Oct-2020 13:02:28 Europe/Kiev] PHP   8. include() /home/janus/www/php-g20/app/Views/layouts/app.php:9
+[23-Oct-2020 13:02:28 Europe/Kiev] PHP   9. require_once() /home/janus/www/php-g20/app/Views/profile/index.php:12
+[23-Oct-2020 13:02:28 Europe/Kiev] PHP  10. Session::unset() /home/janus/www/php-g20/app/Views/layouts/partials/_flash-message.php:11
+[23-Oct-2020 13:02:28 Europe/Kiev] PHP  11. session_unset() /home/janus/www/php-g20/core/Session.php:58
+[23-Oct-2020 13:09:34 Europe/Kiev] PHP Notice:  Array to string conversion in /home/janus/www/php-g20/app/Views/layouts/partials/_flash-message.php on line 14
+[23-Oct-2020 13:09:34 Europe/Kiev] PHP Stack trace:
+[23-Oct-2020 13:09:34 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g20/public/index.php:0
+[23-Oct-2020 13:09:34 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g20/public/index.php:2
+[23-Oct-2020 13:09:34 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g20/bootstrap/app.php:62
+[23-Oct-2020 13:09:34 Europe/Kiev] PHP   4. Router->init() /home/janus/www/php-g20/core/Router.php:31
+[23-Oct-2020 13:09:34 Europe/Kiev] PHP   5. ProfileController->index() /home/janus/www/php-g20/core/Router.php:74
+[23-Oct-2020 13:09:34 Europe/Kiev] PHP   6. View->render() /home/janus/www/php-g20/app/Controllers/ProfileController.php:41
+[23-Oct-2020 13:09:34 Europe/Kiev] PHP   7. require() /home/janus/www/php-g20/core/View.php:31
+[23-Oct-2020 13:09:34 Europe/Kiev] PHP   8. include() /home/janus/www/php-g20/app/Views/layouts/app.php:9
+[23-Oct-2020 13:09:34 Europe/Kiev] PHP   9. require_once() /home/janus/www/php-g20/app/Views/profile/index.php:12
+[23-Oct-2020 14:10:40 Europe/Kiev] PHP Fatal error:  Uncaught Error: Call to undefined function json_response() in /home/janus/www/php-g20/app/Controllers/OrderController.php:50
+Stack trace:
+#0 /home/janus/www/php-g20/core/Router.php(74): OrderController->cart()
+#1 /home/janus/www/php-g20/core/Router.php(31): Router->init()
+#2 /home/janus/www/php-g20/bootstrap/app.php(62): Router->run()
+#3 /home/janus/www/php-g20/public/index.php(2): require_once('/home/janus/www...')
+#4 {main}
+  thrown in /home/janus/www/php-g20/app/Controllers/OrderController.php on line 50
+[23-Oct-2020 14:10:48 Europe/Kiev] PHP Fatal error:  Uncaught Error: Call to undefined function json_response() in /home/janus/www/php-g20/app/Controllers/OrderController.php:50
+Stack trace:
+#0 /home/janus/www/php-g20/core/Router.php(74): OrderController->cart()
+#1 /home/janus/www/php-g20/core/Router.php(31): Router->init()
+#2 /home/janus/www/php-g20/bootstrap/app.php(62): Router->run()
+#3 /home/janus/www/php-g20/public/index.php(2): require_once('/home/janus/www...')
+#4 {main}
+  thrown in /home/janus/www/php-g20/app/Controllers/OrderController.php on line 50
+[23-Oct-2020 14:13:50 Europe/Kiev] PHP Fatal error:  Uncaught Error: Call to undefined function json_response() in /home/janus/www/php-g20/app/Controllers/OrderController.php:50
+Stack trace:
+#0 /home/janus/www/php-g20/core/Router.php(74): OrderController->cart()
+#1 /home/janus/www/php-g20/core/Router.php(31): Router->init()
+#2 /home/janus/www/php-g20/bootstrap/app.php(62): Router->run()
+#3 /home/janus/www/php-g20/public/index.php(2): require_once('/home/janus/www...')
+#4 {main}
+  thrown in /home/janus/www/php-g20/app/Controllers/OrderController.php on line 50
+[23-Oct-2020 14:18:33 Europe/Kiev] PHP Fatal error:  Uncaught Error: Call to undefined function json_response() in /home/janus/www/php-g20/app/Controllers/OrderController.php:50
+Stack trace:
+#0 /home/janus/www/php-g20/core/Router.php(74): OrderController->cart()
+#1 /home/janus/www/php-g20/core/Router.php(31): Router->init()
+#2 /home/janus/www/php-g20/bootstrap/app.php(62): Router->run()
+#3 /home/janus/www/php-g20/public/index.php(2): require_once('/home/janus/www...')
+#4 {main}
+  thrown in /home/janus/www/php-g20/app/Controllers/OrderController.php on line 50
+[23-Oct-2020 14:21:47 Europe/Kiev] PHP Fatal error:  Uncaught Error: Call to undefined function json_response() in /home/janus/www/php-g20/app/Controllers/OrderController.php:50
+Stack trace:
+#0 /home/janus/www/php-g20/core/Router.php(74): OrderController->cart()
+#1 /home/janus/www/php-g20/core/Router.php(31): Router->init()
+#2 /home/janus/www/php-g20/bootstrap/app.php(62): Router->run()
+#3 /home/janus/www/php-g20/public/index.php(2): require_once('/home/janus/www...')
+#4 {main}
+  thrown in /home/janus/www/php-g20/app/Controllers/OrderController.php on line 50
+[23-Oct-2020 14:22:52 Europe/Kiev] PHP Fatal error:  Uncaught Error: Call to undefined function json_response() in /home/janus/www/php-g20/app/Controllers/OrderController.php:50
+Stack trace:
+#0 /home/janus/www/php-g20/core/Router.php(74): OrderController->cart()
+#1 /home/janus/www/php-g20/core/Router.php(31): Router->init()
+#2 /home/janus/www/php-g20/bootstrap/app.php(62): Router->run()
+#3 /home/janus/www/php-g20/public/index.php(2): require_once('/home/janus/www...')
+#4 {main}
+  thrown in /home/janus/www/php-g20/app/Controllers/OrderController.php on line 50
+[23-Oct-2020 14:29:51 Europe/Kiev] PHP Fatal error:  Uncaught Error: Call to undefined function json_response() in /home/janus/www/php-g20/app/Controllers/OrderController.php:50
+Stack trace:
+#0 /home/janus/www/php-g20/core/Router.php(74): OrderController->cart()
+#1 /home/janus/www/php-g20/core/Router.php(31): Router->init()
+#2 /home/janus/www/php-g20/bootstrap/app.php(62): Router->run()
+#3 /home/janus/www/php-g20/public/index.php(2): require_once('/home/janus/www...')
+#4 {main}
+  thrown in /home/janus/www/php-g20/app/Controllers/OrderController.php on line 50
+[23-Oct-2020 14:30:14 Europe/Kiev] PHP Fatal error:  Uncaught Error: Call to undefined function json_response() in /home/janus/www/php-g20/app/Controllers/OrderController.php:50
+Stack trace:
+#0 /home/janus/www/php-g20/core/Router.php(74): OrderController->cart()
+#1 /home/janus/www/php-g20/core/Router.php(31): Router->init()
+#2 /home/janus/www/php-g20/bootstrap/app.php(62): Router->run()
+#3 /home/janus/www/php-g20/public/index.php(2): require_once('/home/janus/www...')
+#4 {main}
+  thrown in /home/janus/www/php-g20/app/Controllers/OrderController.php on line 50

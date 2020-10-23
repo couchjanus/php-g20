@@ -5,9 +5,6 @@ const cartItems = document.querySelector(".cart-items");
 const clearCart = document.querySelector(".clear-cart");
 
 class Storage {
-    static saveProducts(products) {
-        localStorage.setItem("products", JSON.stringify(products));
-    }
     static saveStorageItem(key, item) {
         localStorage.setItem(key, JSON.stringify(item));
     }
@@ -33,7 +30,6 @@ class Storage {
             : [];
     }
 }
-
 class Product {
     makeModel(products) {
         return products.map(item => {
@@ -293,6 +289,8 @@ class App {
                 Storage.saveCart(this.cart);
             }
         });
+
+        
     }
 
     // new code
@@ -362,20 +360,22 @@ class App {
 
     renderCategory() {
         const categories = document.querySelector('.categories');
-        categories.addEventListener('click', (event) => {
-            event.preventDefault();
-            const target = event.target;
+        if(categories){
+            categories.addEventListener('click', (event) => {
+                event.preventDefault();
+                const target = event.target;
 
-            if (target.classList.contains('category-item')) {
-                const category = target.dataset.category;
-                const categoryFilter = items => items.filter(item => item.category.includes(category));
-                this.makeShowcase(categoryFilter(Storage.getStorageItem("products")));
-            } else {
-                this.makeShowcase(Storage.getStorageItem("products"));
-            }
-            this.addToCarts();
-            this.renderCart();
-        });
+                if (target.classList.contains('category-item')) {
+                    const category = target.dataset.category;
+                    const categoryFilter = items => items.filter(item => item.category.includes(category));
+                    this.makeShowcase(categoryFilter(Storage.getStorageItem("products")));
+                } else {
+                    this.makeShowcase(Storage.getStorageItem("products"));
+                }
+                this.addToCarts();
+                this.renderCart();
+            });
+        }
     }
 
 }
@@ -389,9 +389,41 @@ class App {
     }
 
     app.fetchData("products", new Product());
-    app.makeShowcase(Storage.getStorageItem("products"));
+    if(document.querySelector('.showcase')) {
+        app.makeShowcase(Storage.getStorageItem("products"));
+    }
     app.addToCarts();
     app.renderCart();
     app.renderCategory();
+
+    // checkout__now
+    if (document.querySelector(".checkout__now")) {
+        document.querySelector(".checkout__now").addEventListener("click", () => {
+            let inCart = [];
+            app.cart.forEach(item => {
+                inCart.push({
+                id: item.id,
+                amount: item.amount
+                });
+            });
+            console.log(inCart);
+            fetch("/api/cart", {
+                method: "POST", // *GET, POST, PUT, DELETE, etc.
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({
+                cart: inCart,
+                })
+            })
+            .then(function(response) {
+                app.clear();
+                document.location.replace("/profile");
+            })
+            .catch(function(error) {
+                console.log(error);
+            });
+        });
+    }
 
 })();
