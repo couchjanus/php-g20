@@ -18,6 +18,7 @@ class HomeController extends Controller
         $products = Product::getProducts();
         echo json_encode($products);
     }
+    
     public function getCategories()
     {
         $categories = Category::getCategories();
