@@ -1080,3 +1080,82 @@ Stack trace:
 #3 /home/janus/www/php-g20/public/index.php(2): require_once('/home/janus/www...')
 #4 {main}
   thrown in /home/janus/www/php-g20/app/Controllers/OrderController.php on line 50
+[26-Oct-2020 09:36:32 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class 'Core\Model' not found in /home/janus/www/php-g20/app/Models/Order.php:11
+Stack trace:
+#0 /home/janus/www/php-g20/app/Controllers/ProfileController.php(4): require_once()
+#1 /home/janus/www/php-g20/core/Router.php(61): include_once('/home/janus/www...')
+#2 /home/janus/www/php-g20/core/Router.php(31): Router->init()
+#3 /home/janus/www/php-g20/bootstrap/app.php(62): Router->run()
+#4 /home/janus/www/php-g20/public/index.php(2): require_once('/home/janus/www...')
+#5 {main}
+  thrown in /home/janus/www/php-g20/app/Models/Order.php on line 11
+[26-Oct-2020 09:56:55 Europe/Kiev] PHP Notice:  Undefined variable: options in /home/janus/www/php-g20/app/Controllers/OrderController.php on line 66
+[26-Oct-2020 09:56:55 Europe/Kiev] PHP Stack trace:
+[26-Oct-2020 09:56:55 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g20/public/index.php:0
+[26-Oct-2020 09:56:55 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g20/public/index.php:2
+[26-Oct-2020 09:56:55 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g20/bootstrap/app.php:62
+[26-Oct-2020 09:56:55 Europe/Kiev] PHP   4. Router->init() /home/janus/www/php-g20/core/Router.php:31
+[26-Oct-2020 09:56:55 Europe/Kiev] PHP   5. OrderController->cart() /home/janus/www/php-g20/core/Router.php:74
+[26-Oct-2020 15:04:07 Europe/Kiev] PHP Notice:  Undefined variable: options in /home/janus/www/php-g20/app/Controllers/OrderController.php on line 66
+[26-Oct-2020 15:04:07 Europe/Kiev] PHP Stack trace:
+[26-Oct-2020 15:04:07 Europe/Kiev] PHP   1. {main}() /home/janus/www/php-g20/public/index.php:0
+[26-Oct-2020 15:04:07 Europe/Kiev] PHP   2. require_once() /home/janus/www/php-g20/public/index.php:2
+[26-Oct-2020 15:04:07 Europe/Kiev] PHP   3. Router->run() /home/janus/www/php-g20/bootstrap/app.php:62
+[26-Oct-2020 15:04:07 Europe/Kiev] PHP   4. Router->init() /home/janus/www/php-g20/core/Router.php:31
+[26-Oct-2020 15:04:07 Europe/Kiev] PHP   5. OrderController->cart() /home/janus/www/php-g20/core/Router.php:74
+[26-Oct-2020 15:16:07 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class 'ContactController' not found in /home/janus/www/php-g20/core/Router.php:62
+Stack trace:
+#0 /home/janus/www/php-g20/core/Router.php(31): Router->init()
+#1 /home/janus/www/php-g20/core/App.php(25): Router->run()
+#2 /home/janus/www/php-g20/bootstrap/app.php(74): App->init()
+#3 /home/janus/www/php-g20/public/index.php(2): require_once('/home/janus/www...')
+#4 {main}
+  thrown in /home/janus/www/php-g20/core/Router.php on line 62
+[26-Oct-2020 15:23:24 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class 'core\Router' not found in /home/janus/www/php-g20/core/App.php:25
+Stack trace:
+#0 /home/janus/www/php-g20/bootstrap/app.php(82): core\App->init()
+#1 /home/janus/www/php-g20/public/index.php(2): require_once('/home/janus/www...')
+#2 {main}
+  thrown in /home/janus/www/php-g20/core/App.php on line 25
+[26-Oct-2020 15:23:41 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class 'core\Request' not found in /home/janus/www/php-g20/core/App.php:26
+Stack trace:
+#0 /home/janus/www/php-g20/bootstrap/app.php(82): core\App->init()
+#1 /home/janus/www/php-g20/public/index.php(2): require_once('/home/janus/www...')
+#2 {main}
+  thrown in /home/janus/www/php-g20/core/App.php on line 26
+[26-Oct-2020 15:23:54 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class 'Helper' not found in /home/janus/www/php-g20/app/Views/layouts/partials/_sidebar.php:17
+Stack trace:
+#0 /home/janus/www/php-g20/app/Views/layouts/app.php(6): require_once()
+#1 /home/janus/www/php-g20/core/View.php(31): require('/home/janus/www...')
+#2 /home/janus/www/php-g20/app/Controllers/HomeController.php(13): View->render()
+#3 /home/janus/www/php-g20/core/Router.php(74): HomeController->index()
+#4 /home/janus/www/php-g20/core/Router.php(31): core\Router->init()
+#5 /home/janus/www/php-g20/core/App.php(26): core\Router->run()
+#6 /home/janus/www/php-g20/bootstrap/app.php(82): core\App->init()
+#7 /home/janus/www/php-g20/public/index.php(2): require_once('/home/janus/www...')
+#8 {main}
+  thrown in /home/janus/www/php-g20/app/Views/layouts/partials/_sidebar.php on line 17
+[26-Oct-2020 15:24:08 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class 'Helper' not found in /home/janus/www/php-g20/app/Views/layouts/partials/_sidebar.php:17
+Stack trace:
+#0 /home/janus/www/php-g20/app/Views/layouts/app.php(6): require_once()
+#1 /home/janus/www/php-g20/core/View.php(31): require('/home/janus/www...')
+#2 /home/janus/www/php-g20/app/Controllers/HomeController.php(13): View->render()
+#3 /home/janus/www/php-g20/core/Router.php(74): HomeController->index()
+#4 /home/janus/www/php-g20/core/Router.php(31): core\Router->init()
+#5 /home/janus/www/php-g20/core/App.php(26): core\Router->run()
+#6 /home/janus/www/php-g20/bootstrap/app.php(82): core\App->init()
+#7 /home/janus/www/php-g20/public/index.php(2): require_once('/home/janus/www...')
+#8 {main}
+  thrown in /home/janus/www/php-g20/app/Views/layouts/partials/_sidebar.php on line 17
+[26-Oct-2020 15:24:32 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class 'Helper' not found in /home/janus/www/php-g20/app/Views/layouts/partials/_sidebar.php:17
+Stack trace:
+#0 /home/janus/www/php-g20/app/Views/layouts/app.php(6): require_once()
+#1 /home/janus/www/php-g20/core/View.php(31): require('/home/janus/www...')
+#2 /home/janus/www/php-g20/app/Controllers/HomeController.php(13): View->render()
+#3 /home/janus/www/php-g20/core/Router.php(74): HomeController->index()
+#4 /home/janus/www/php-g20/core/Router.php(31): core\Router->init()
+#5 /home/janus/www/php-g20/core/App.php(26): core\Router->run()
+#6 /home/janus/www/php-g20/bootstrap/app.php(82): core\App->init()
+#7 /home/janus/www/php-g20/public/index.php(2): require_once('/home/janus/www...')
+#8 {main}
+  thrown in /home/janus/www/php-g20/app/Views/layouts/partials/_sidebar.php on line 17

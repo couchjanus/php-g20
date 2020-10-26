@@ -65,8 +65,7 @@ class App {
 
     // constructor
     constructor() {
-        const toggleBtn = document.querySelector(".cart-toggle");
-        const closeBtn = document.querySelector(".close-btn");
+        
         const socialGroup = [
             {
                 liClass: '',
@@ -93,8 +92,7 @@ class App {
                 capture: 'Google'
             },
         ];
-        closeBtn.addEventListener("click", () => this.closeCart());
-        toggleBtn.addEventListener("click", () => this.openCart());
+        
         this.navbarToggle();
         document.querySelector('footer div.row').lastElementChild.innerHTML = this.makeLiGroup(socialGroup, 'list-unstyled footer-socials social-icon', '<h6 class="text-uppercase">Social media</h6>');
         this.cart = Storage.getCart();
@@ -104,11 +102,46 @@ class App {
 
     openCart() {
         document.querySelector(".overlay").classList.add("active");
-        sidebar.classList.toggle("show-sidebar");
+        sidebar.classList.add("show-sidebar");
         cartItems.innerHTML = '';
         this.cart = Storage.getCart();
-        this.populateCart(this.cart);
+        this.populateCart();
         this.setCartTotal(this.cart);
+
+        clearCart.addEventListener("click", () => this.clear());
+        
+        cartItems.onclick = (event) => {
+            this.renderCart(event);
+        };
+    }
+
+    renderCart(event) {
+            let tempItem = null;
+            if (event.target.classList.contains("fa-trash-alt")) {
+                this.cart = this.filterItem(this.cart, event.target);
+                event.target.closest('.cart-item').remove();
+                Storage.saveCart(this.cart);
+                this.setCartTotal(this.cart);
+            } 
+            else if (event.target.classList.contains("fa-caret-right")) {
+                tempItem = this.findItem(this.cart, event.target);
+                tempItem.amount = tempItem.amount + 1;
+                event.target.previousElementSibling.innerText = tempItem.amount;
+                Storage.saveCart(this.cart);
+                this.setCartTotal(this.cart);
+            }
+            else if (event.target.classList.contains("fa-caret-left")) {
+                tempItem = this.findItem(this.cart, event.target);
+                if (tempItem && tempItem.amount > 1) {
+                    tempItem.amount = tempItem.amount - 1;
+                    event.target.nextElementSibling.innerText = tempItem.amount;
+                } else {
+                    this.cart = this.filterItem(this.cart, event.target);
+                    event.target.closest('.cart-item').remove();
+                }
+                this.setCartTotal(this.cart);
+                Storage.saveCart(this.cart);
+            }
     }
 
     closeCart() {
@@ -198,7 +231,7 @@ class App {
     addCartItem(item) {
         const div = document.createElement("div");
         div.classList.add("cart-item");
-        div.setAttribute('id', item.id);
+        div.setAttribute('id', "id_"+item.id);
         div.innerHTML = `<!-- cart item -->
             <div class="picture product-img">
                 <img src="${item.image}" alt="${item.name}" class="img-fluid w-100">
@@ -259,48 +292,15 @@ class App {
     filterItem = (cart, curentItem) => cart.filter(item => item.id !== +(curentItem.dataset.id));
 
     findItem = (cart, curentItem) => cart.find(item => item.id === +(curentItem.dataset.id));
-
-    renderCart() {
-
-        clearCart.addEventListener("click", () => this.clear());
-
-        cartItems.addEventListener("click", event => {
-            if (event.target.classList.contains("fa-trash-alt")) {
-                this.cart = this.filterItem(this.cart, event.target);
-                this.setCartTotal(this.cart);
-                Storage.saveCart(this.cart);
-                cartItems.removeChild(event.target.parentElement.parentElement.parentElement);
-            } else if (event.target.classList.contains("fa-caret-right")) {
-                let tempItem = this.findItem(this.cart, event.target);
-                tempItem.amount = tempItem.amount + 1;
-                this.setCartTotal(this.cart);
-                Storage.saveCart(this.cart);
-                event.target.previousElementSibling.innerText = tempItem.amount;
-            } else if (event.target.classList.contains("fa-caret-left")) {
-                let tempItem = this.findItem(this.cart, event.target);
-                tempItem.amount = tempItem.amount - 1;
-                if (tempItem.amount > 0) {
-                    event.target.nextElementSibling.innerText = tempItem.amount;
-                } else {
-                    this.cart = this.filterItem(this.cart, event.target);
-                    cartItems.removeChild(event.target.parentElement.parentElement.parentElement);
-                }
-                this.setCartTotal(this.cart);
-                Storage.saveCart(this.cart);
-            }
-        });
-
         
-    }
-
     // new code
     setCartTotal(cart) {
         this.cartTotal.textContent = parseFloat(cart.reduce((previous, current) => previous + current.price * current.amount, 0).toFixed(2));
         this.countItems.textContent = cart.reduce((previous, current) => previous + current.amount, 0);
     }
 
-    populateCart(cart) {
-        cart.forEach(item => this.addCartItem(item));
+    populateCart() {
+        this.cart.forEach(item => this.addCartItem(item));
     }
 
     fetchData(resource, model) {
@@ -330,25 +330,6 @@ class App {
         </a>`;
     }
 
-    makeCategories1(categories) {
-        let categoryLength = (categories.length>3)? 3: categories.length;  
-        for (let i = 0; i < categoryLength; i++) {
-            let div = document.createElement('div');
-            div.className = "col-md-4";
-            if (i < 2) {
-                div.classList.add(['mb-4', 'mb-md-0']);
-            }
-            if (i == 0) {
-                div.innerHTML = this.createCategory(categories[i]);
-            } else if (i == 1) {
-                div.innerHTML = this.createCategory(categories[i]) + this.createCategory(categories[i + 1]);
-            } else if (i == 2) {
-                div.innerHTML = this.createCategory(categories[i + 1]);
-            }
-            document.querySelector('.categories').append(div);
-        }
-    }
-
     makeCategories(categories) {
         for (let i = 0; i < categories.length; i++) {
             let div = document.createElement('div');
@@ -363,6 +344,7 @@ class App {
         if(categories){
             categories.addEventListener('click', (event) => {
                 event.preventDefault();
+                event.stopPropagation();
                 const target = event.target;
 
                 if (target.classList.contains('category-item')) {
@@ -373,7 +355,6 @@ class App {
                     this.makeShowcase(Storage.getStorageItem("products"));
                 }
                 this.addToCarts();
-                this.renderCart();
             });
         }
     }
@@ -391,9 +372,15 @@ class App {
     app.fetchData("products", new Product());
     if(document.querySelector('.showcase')) {
         app.makeShowcase(Storage.getStorageItem("products"));
+        app.addToCarts();
     }
-    app.addToCarts();
-    app.renderCart();
+
+    const toggleBtn = document.querySelector(".cart-toggle");
+    const closeBtn = document.querySelector(".close-btn");
+
+    closeBtn.addEventListener("click", () => app.closeCart());
+    toggleBtn.addEventListener("click", () => app.openCart());
+    
     app.renderCategory();
 
     // checkout__now

@@ -29,12 +29,8 @@ CREATE TABLE `categories` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 INSERT INTO `categories` (`id`, `name`, `status`) VALUES
-(1,	'Clothes',	1),
-(2,	'Shoes',	1),
-(3,	'Watches',	1),
-(4,	'Electronics',	1),
-(5,	'Cosmetics',	1),
-(6,	'Bags',	1);
+(9,	'Clothes',	1),
+(10,	'Shoes',	1);
 
 DROP TABLE IF EXISTS `guestbook`;
 CREATE TABLE `guestbook` (
@@ -53,6 +49,17 @@ INSERT INTO `guestbook` (`id`, `name`, `email`, `message`, `subject`, `created_a
 (3,	'Jaine',	'jaine@example.com',	'Hi, It is Jain Aire',	1,	'2020-09-30 09:05:13'),
 (4,	'Joker',	'jk@my.cat',	'Hello cats!',	2,	'2020-09-30 09:14:44');
 
+DROP TABLE IF EXISTS `orders`;
+CREATE TABLE `orders` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `user_id` int(11) DEFAULT NULL,
+  `order_date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `products` text COLLATE utf8mb4_unicode_ci NOT NULL,
+  `status` int(11) NOT NULL DEFAULT '1',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+
 DROP TABLE IF EXISTS `pictures`;
 CREATE TABLE `pictures` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
@@ -63,7 +70,12 @@ CREATE TABLE `pictures` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 INSERT INTO `pictures` (`id`, `filename`, `resource`, `resource_id`) VALUES
-(1,	'2492afd6abba3114f84f25fbcee2131af90040fc1603096419',	'products',	1);
+(1,	'2492afd6abba3114f84f25fbcee2131af90040fc1603096419',	'products',	1),
+(2,	'74fb26db4f3242f91383c29998f20930f76d9bf01603279971',	'categories',	8),
+(3,	'3aea7da61f2a1f71f64d617566d5c160b6364a701603280018',	'categories',	9),
+(4,	'86b9ad43c63dbae38f9c3e3452deb85dfaa004a91603283284',	'products',	2),
+(5,	'c70caa2c16d845b82fedb0b721e0b6bb076e6a001603284316',	'categories',	10),
+(6,	'f36c7fdbc0dddffe8812a718e8b2319e3de339c71603649604',	'products',	3);
 
 DROP TABLE IF EXISTS `products`;
 CREATE TABLE `products` (
@@ -80,8 +92,9 @@ CREATE TABLE `products` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 INSERT INTO `products` (`id`, `name`, `status`, `category_id`, `price`, `brand_id`, `description`, `is_new`, `is_recommended`) VALUES
-(1,	'Red shoes',	1,	2,	222,	1,	'red sjoes',	1,	0);
-
+(1,	'Red shoes',	1,	10,	222,	1,	'red sjoes',	1,	0),
+(2,	'Men&#039;s T-Shirt',	1,	9,	12,	2,	'Men&#039;s T-Shirt',	1,	0),
+(3,	'Black shoes',	1,	10,	111,	2,	'Men&#039;s shoes',	1,	0);
 
 DROP TABLE IF EXISTS `roles`;
 CREATE TABLE `roles` (
@@ -91,9 +104,7 @@ CREATE TABLE `roles` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 INSERT INTO `roles` (`id`, `name`) VALUES
-(1,	'admin'),
-(2,	'manager'),
-(3,	'customer');
+(1,	'admin');
 
 DROP TABLE IF EXISTS `users`;
 CREATE TABLE `users` (
@@ -109,4 +120,10 @@ CREATE TABLE `users` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
--- 2020-10-21 14:08:07
+INSERT INTO `users` (`id`, `name`, `email`, `password`, `role_id`, `status`, `first_name`, `last_name`, `phone_number`) VALUES
+(1,	'admin',	'admin@my.cat',	'$2y$12$.tV2QqbjXV1T4a.gKC5D/e/WUVo6qpaHe08C.z2h08djmCdl.Li9W',	1,	1,	NULL,	NULL,	NULL),
+(2,	'cat',	'cat@my.cat',	'$2y$12$0kXkzN3zYPd7bosw9.UVXelhDp/YO2LtP57DR8Pq.Iq58rGgnGVWu',	3,	1,	NULL,	NULL,	NULL),
+(3,	'dog',	'dog@my.cat',	'$2y$12$QcFSrkMeWJIt16G6udpKHORVpI4YY/YoL4ohPf/IA0zMFFhFaTsjO',	3,	1,	NULL,	NULL,	NULL),
+(4,	'Tom',	'tom@my.cat',	'$2y$12$EgSQLQUg9QMe.apZUR.bleScMRJ/J/mYSuiSxQvdkvjxHM.mT/Lra',	1,	1,	NULL,	NULL,	NULL);
+
+-- 2020-10-26 07:03:31

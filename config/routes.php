@@ -36,17 +36,37 @@ $router->post('admin/users/update', 'Admin\UserController@patch');
 $router->get('admin/users/delete/{id}', 'Admin\UserController@delete');
 $router->post('admin/users/destroy/{id}', 'Admin\UserController@destroy');
 
+$router->get('admin/orders', 'Admin\OrderController@index');
+$router->get('admin/orders/show/{id}', 'Admin\OrderController@show');
+$router->post('admin/orders/edit/{id}', 'Admin\OrderController@edit');
+$router->post('admin/orders/update', 'Admin\OrderController@patch');
+$router->get('admin/orders/delete/{id}', 'Admin\OrderController@delete');
+$router->post('admin/orders/delete', 'Admin\OrderController@destroy');
+
+
 $router->get('api/products', 'HomeController@getProducts');
 $router->get('api/categories', 'HomeController@getCategories');
-
-$router->post('api/cart', 'OrderController@cart');
-$router->get('api/shop/{id}', 'HomeController@getProduct');
+$router->get('api/products/{id}', 'HomeController@getProduct');
 $router->get('api/product/{id}', 'HomeController@getProductItem');
-$router->get('api/categories', 'HomeController@getCategories');
 $router->get('api/categories/{id}', 'HomeController@getProductsByCategory');
 
-$router->get('sign', 'AuthController@signForm');
-$router->post('register', 'AuthController@signup');
-$router->post('login', 'AuthController@signin');
-$router->get('logout', 'AuthController@logout');
+$router->post('api/cart', 'OrderController@cart');
+
+$router->get('sign', 'LoginController@signForm');
+$router->post('register', 'RegisterController@signup');
+$router->post('login', 'LoginController@signin');
+$router->get('logout', 'LoginController@logout');
+
+// $router->get('sign', 'AuthController@signForm');
+// $router->post('register', 'AuthController@signup');
+// $router->post('login', 'AuthController@signin');
+// $router->get('logout', 'AuthController@logout');
+
 $router->get('profile', 'ProfileController@index');
+$router->get('profile/orders', 'ProfileController@ordersList');
+$router->get('profile/orders/view/{id}', 'ProfileController@orderView');
+$router->get('profile/orders/check/{id}', 'ProfileController@checkOrder');
+$router->post('profile/orders/change', 'ProfileController@changeOrder');
+
+
+

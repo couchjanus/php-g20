@@ -52,12 +52,25 @@ function conf($mix) {
 // ============================
 
 require_once realpath(__DIR__.'/../config').'/app.php';
-init();
-setErrorLogging();
        
-require_once CORE.'/Request.php';
-require_once CORE.'/Router.php';
-require_once CORE.'/Helper.php';
-$router = Router::load(ROUTES);
-$router->run(Request::uri(), Request::method());
+// require_once CORE.'/Helper.php';
+// require_once CORE.'/App.php';
 
+spl_autoload_register(function($class) {
+    $file = CORE.'/'.$class.EXT;
+    if(is_file($file)) {
+        require_once $file;
+    }
+
+    $filename = MODELS. '/' . $class . EXT;
+    if (file_exists($filename)) {
+        include_once $filename;
+    }
+});
+
+
+// 
+$app = new App();
+
+
+$app->init();

@@ -1,5 +1,5 @@
 <?php
-
+// namespace core;
 class Request
 {
     private $request; // переменная хранящая данные GET, POST и FILES
